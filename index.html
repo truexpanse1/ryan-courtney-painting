@@ -102,46 +102,81 @@
     .mobile-phone { display: flex; align-items: center; gap: 8px; color: var(--navy); font-weight: 600; }
     @media (max-width: 767px) { .nav-links { display: none; } .menu-toggle { display: flex; } }
 
-    /* HERO */
-    .lp-hero { background: linear-gradient(135deg, #EFF6FF 0%, #ffffff 60%); padding: 80px 0 70px; overflow: hidden; }
-    .lp-hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    /* HERO — FULL BLEED */
+    .lp-hero { position: relative; min-height: 92vh; display: flex; align-items: center; overflow: hidden; }
+    .lp-hero-bg { position: absolute; inset: 0; }
+    .lp-hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+    .lp-hero-overlay { position: absolute; inset: 0;
+      background: linear-gradient(105deg, rgba(8,12,28,.88) 0%, rgba(8,12,28,.78) 50%, rgba(8,12,28,.45) 100%); }
+    .lp-hero-inner { position: relative; z-index: 2; width: 100%;
+      display: grid; grid-template-columns: 1fr 420px; gap: 56px;
+      align-items: center; padding: 100px 0 80px; }
+    /* LEFT — HEADLINE */
+    .hero-left { color: #fff; }
     .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px;
-      font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
-      color: var(--green); border: 1px solid rgba(22,163,74,.3);
-      background: rgba(22,163,74,.08); padding: 6px 14px; border-radius: 4px; margin-bottom: 24px; }
-    .lp-hero h1 { font-family: 'Barlow', sans-serif; font-weight: 900;
-      font-size: clamp(2.2rem, 4.5vw, 3.5rem); line-height: 1.06; letter-spacing: -.025em;
-      color: var(--text); margin-bottom: 20px; }
-    .lp-hero h1 .hl { color: var(--navy); }
-    .lp-hero h1 .hl-amber { color: var(--amber); }
-    .lp-hero-sub { font-size: clamp(1rem, 1.8vw, 1.125rem); color: var(--muted);
-      line-height: 1.7; max-width: 560px; margin-bottom: 36px; }
-    .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 28px; }
-    .hero-micro { display: flex; flex-wrap: wrap; gap: 20px; }
-    .hero-micro-item { display: flex; align-items: center; gap: 7px; font-size: .85rem; color: var(--muted); font-weight: 500; }
-    .hero-micro-item svg { color: var(--green); flex-shrink: 0; }
-    .hero-image-wrap { position: relative; }
-    .hero-main-img { width: 100%; height: 520px; object-fit: cover; border-radius: 16px;
-      box-shadow: 0 20px 60px rgba(30,58,138,.15); background: #DBEAFE; }
-    .hero-badge { position: absolute; bottom: -20px; left: -20px;
-      background: var(--navy); color: #fff; border-radius: 12px;
-      padding: 18px 22px; box-shadow: 0 8px 32px rgba(30,58,138,.35); }
-    .hero-badge-num { font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 2rem; line-height: 1; }
-    .hero-badge-label { font-size: .75rem; color: rgba(255,255,255,.7); margin-top: 2px; }
-    .hero-badge2 { position: absolute; top: 20px; right: -16px;
-      background: #fff; border-radius: 10px; padding: 14px 18px;
-      box-shadow: 0 8px 24px rgba(0,0,0,.12); display: flex; align-items: center; gap: 10px; }
-    .hero-badge2-stars { color: #F59E0B; font-size: 1rem; letter-spacing: 1px; }
-    .hero-badge2-text strong { display: block; color: var(--text); font-size: .85rem; }
-    .hero-badge2-text { font-size: .75rem; color: var(--muted); line-height: 1.4; }
-    @media (max-width: 900px) {
-      .lp-hero-grid { grid-template-columns: 1fr; gap: 48px; }
-      .hero-image-wrap { order: -1; }
-      .hero-main-img { height: 300px; }
-      .hero-badge { bottom: -12px; left: 12px; }
-      .hero-badge2 { top: 12px; right: 12px; }
+      font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+      color: #F59E0B; border: 1px solid rgba(245,158,11,.45);
+      background: rgba(245,158,11,.12); padding: 6px 14px; border-radius: 4px; margin-bottom: 24px; }
+    .hero-left h1 { font-family: 'Barlow', sans-serif; font-weight: 900;
+      font-size: clamp(2.6rem, 5vw, 4.25rem); line-height: 1.04;
+      letter-spacing: -.03em; color: #fff; margin-bottom: 22px; }
+    .hero-left h1 .hl-amber { color: #F59E0B; }
+    .hero-left-sub { font-size: 1.0625rem; color: rgba(255,255,255,.72);
+      line-height: 1.75; max-width: 520px; margin-bottom: 40px; }
+    .hero-stats { display: flex; gap: 0; flex-wrap: wrap; }
+    .hero-stat { display: flex; flex-direction: column; gap: 4px; padding: 0 28px 0 0; }
+    .hero-stat:first-child { padding-left: 0; }
+    .hero-stat + .hero-stat { border-left: 1px solid rgba(255,255,255,.18); padding-left: 28px; }
+    .hero-stat-num { font-family: 'Barlow', sans-serif; font-weight: 900;
+      font-size: 2.25rem; color: #fff; line-height: 1; }
+    .hero-stat-num span { color: #F59E0B; }
+    .hero-stat-label { font-size: .72rem; color: rgba(255,255,255,.5);
+      letter-spacing: .07em; text-transform: uppercase; }
+    /* RIGHT — OFFER CARD */
+    .hero-offer-card { background: #fff; border-radius: 16px; padding: 36px 32px;
+      box-shadow: 0 32px 80px rgba(0,0,0,.4); position: relative; }
+    .offer-ribbon { position: absolute; top: -1px; right: 22px;
+      background: var(--amber); color: #fff; font-size: .68rem; font-weight: 800;
+      letter-spacing: .1em; text-transform: uppercase;
+      padding: 5px 14px 7px; border-radius: 0 0 10px 10px; }
+    .offer-card-title { font-family: 'Barlow', sans-serif; font-weight: 900;
+      font-size: 1.4rem; color: var(--text); line-height: 1.2; margin-bottom: 6px; }
+    .offer-card-value { display: inline-block; font-size: .78rem; font-weight: 700;
+      color: var(--navy); background: var(--blue-light);
+      padding: 3px 10px; border-radius: 4px; margin-bottom: 14px; }
+    .offer-card-desc { font-size: .875rem; color: var(--muted); line-height: 1.68; margin-bottom: 16px; }
+    .offer-card-includes { list-style: none; display: flex; flex-direction: column; gap: 9px; margin-bottom: 22px; }
+    .offer-card-includes li { display: flex; align-items: center; gap: 9px;
+      font-size: .85rem; font-weight: 600; color: var(--text); }
+    .offer-card-includes svg { color: var(--green); flex-shrink: 0; }
+    .offer-card-divider { height: 1px; background: var(--border); margin: 0 0 20px; }
+    .offer-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .offer-form .form-field { margin-bottom: 10px; }
+    .offer-form input, .offer-form select {
+      background: var(--bg2); border: 1.5px solid var(--border); border-radius: 7px;
+      color: var(--text); font-family: 'Inter', sans-serif; font-size: .9rem;
+      padding: 11px 14px; width: 100%; outline: none; transition: border-color .15s; }
+    .offer-form input:focus, .offer-form select:focus { border-color: var(--navy); background: #fff; }
+    .offer-form input::placeholder { color: #b0b8c5; }
+    .offer-cta-btn { width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;
+      background: var(--navy); color: #fff; font-family: 'Barlow', sans-serif;
+      font-weight: 800; font-size: 1.05rem; letter-spacing: .01em;
+      padding: 16px 24px; border: none; border-radius: 8px; cursor: pointer;
+      transition: background .15s, transform .15s; margin-top: 6px; }
+    .offer-cta-btn:hover { background: var(--navy-dark); transform: translateY(-1px); }
+    .offer-cta-note { font-size: .73rem; color: var(--muted); text-align: center; margin-top: 10px; line-height: 1.5; }
+    @media (max-width: 1024px) {
+      .lp-hero-inner { grid-template-columns: 1fr 380px; gap: 40px; }
     }
-    @media (max-width: 640px) { .lp-hero { padding: 60px 0 50px; } .hero-ctas { flex-direction: column; } }
+    @media (max-width: 860px) {
+      .lp-hero-inner { grid-template-columns: 1fr; padding: 80px 0 60px; }
+      .hero-left h1 { font-size: clamp(2rem, 8vw, 3rem); }
+      .lp-hero { min-height: auto; }
+    }
+    @media (max-width: 480px) {
+      .hero-offer-card { padding: 28px 20px; }
+      .offer-form .form-row { grid-template-columns: 1fr; }
+    }
 
     /* TRUST STRIP */
     .trust-strip { background: var(--navy); padding: 18px 0; }
@@ -357,60 +392,75 @@
 
 <!-- ═══ HERO ═══ -->
 <section class="lp-hero">
-  <div class="container lp-hero-grid">
-    <div>
+  <!-- Full-bleed background -->
+  <div class="lp-hero-bg">
+    <img src="images/interior_after.jpg" alt="Beautifully painted luxury interior by R. Courtney Painting" />
+  </div>
+  <div class="lp-hero-overlay"></div>
+
+  <div class="container lp-hero-inner">
+
+    <!-- LEFT — Headline + Stats -->
+    <div class="hero-left">
       <div class="hero-eyebrow">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         San Mateo &amp; Bay Area — Licensed &amp; Insured
       </div>
-      <h1>Your Home Deserves a <span class="hl">Flawless Finish</span> — <span class="hl-amber">Not Excuses.</span></h1>
-      <p class="lp-hero-sub">R. Courtney Painting delivers premium interior &amp; exterior painting, drywall repair, wall texturing, and pressure washing across San Mateo and the Bay Area — with meticulous prep, clean lines, and results that actually last.</p>
-
-      <!-- OFFER CALLOUT -->
-      <div class="offer-box">
-        <div class="offer-value-tag">$297 Value — Yours Free</div>
-        <div class="offer-title">🎨 The Free Paint &amp; Prep Inspection</div>
-        <p class="offer-desc">Ryan comes to your home, inspects every paintable surface, flags prep issues most painters miss, recommends colours for your lighting, and hands you a detailed written scope — at zero cost. Whether you hire us or not, you leave with a clear picture of exactly what your home needs.</p>
-        <div class="offer-includes">
-          <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Surface &amp; prep assessment</span>
-          <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Colour consultation</span>
-          <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Written scope &amp; fixed quote</span>
+      <h1>Your Home Deserves a <span class="hl-amber">Flawless Finish.</span><br>Not Excuses.</h1>
+      <p class="hero-left-sub">R. Courtney Painting delivers premium interior &amp; exterior painting, drywall repair, wall texturing, and pressure washing — with meticulous prep, clean lines, and results that actually last. No mess. No shortcuts.</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num">500<span>+</span></span>
+          <span class="hero-stat-label">Homes Painted</span>
         </div>
-      </div>
-
-      <div class="hero-ctas">
-        <a href="#quote" class="btn btn-primary btn-lg">Claim My Free Inspection →</a>
-        <a href="tel:+16509215694" class="btn btn-outline btn-lg">📞 Call Ryan Direct</a>
-      </div>
-      <div class="hero-micro">
-        <span class="hero-micro-item">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          No obligation — ever
-        </span>
-        <span class="hero-micro-item">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          100% satisfaction guarantee
-        </span>
-        <span class="hero-micro-item">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          Licensed &amp; insured
-        </span>
-      </div>
-    </div>
-    <div class="hero-image-wrap">
-      <img src="images/exterior_home.jpg" alt="Beautiful home exterior repainted by R. Courtney Painting in San Mateo CA" class="hero-main-img" />
-      <div class="hero-badge">
-        <div class="hero-badge-num">500+</div>
-        <div class="hero-badge-label">Homes Transformed</div>
-      </div>
-      <div class="hero-badge2">
-        <span class="hero-badge2-stars">★★★★★</span>
-        <div class="hero-badge2-text">
-          <strong>5-Star Rated</strong>
-          Google &amp; Facebook
+        <div class="hero-stat">
+          <span class="hero-stat-num">10<span>+</span></span>
+          <span class="hero-stat-label">Years Experience</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">★ 5.0</span>
+          <span class="hero-stat-label">Google Rating</span>
         </div>
       </div>
     </div>
+
+    <!-- RIGHT — Offer Card -->
+    <div class="hero-offer-card">
+      <div class="offer-ribbon">$297 Value — FREE</div>
+      <div class="offer-card-title">🎨 Free Paint &amp; Prep Inspection</div>
+      <span class="offer-card-value">Complimentary — No Obligation</span>
+      <p class="offer-card-desc">Ryan personally comes to your home, inspects every surface, flags prep issues most painters miss, consults on colour, and hands you a detailed written scope — at zero cost.</p>
+      <ul class="offer-card-includes">
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Full surface &amp; prep assessment</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> In-home colour consultation</li>
+        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Written scope &amp; fixed-price quote</li>
+      </ul>
+      <div class="offer-card-divider"></div>
+      <form class="offer-form" id="heroForm">
+        <div class="form-row">
+          <div class="form-field">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-field">
+            <input type="tel" name="phone" placeholder="Phone Number" required />
+          </div>
+        </div>
+        <div class="form-field">
+          <select name="service">
+            <option value="">What do you need painted?</option>
+            <option>Interior Painting</option>
+            <option>Exterior Painting</option>
+            <option>Interior + Exterior</option>
+            <option>Cabinet Refinishing</option>
+            <option>Drywall Repair</option>
+            <option>Not sure — need advice</option>
+          </select>
+        </div>
+        <button type="submit" class="offer-cta-btn">Book My Free Inspection →</button>
+        <p class="offer-cta-note">🔒 No obligation. Ryan responds within 24 hours.</p>
+      </form>
+    </div>
+
   </div>
 </section>
 
@@ -879,17 +929,19 @@
     });
   });
 
-  // Form submit
-  const form = document.getElementById('quoteForm');
-  if (form) {
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      btn.textContent = '✅ Request Sent — Ryan Will Be In Touch!';
-      btn.disabled = true;
-      btn.style.background = '#16A34A';
-    });
-  }
+  // Form submit — both hero and bottom form
+  ['heroForm','quoteForm'].forEach(id => {
+    const form = document.getElementById(id);
+    if (form) {
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        const btn = form.querySelector('button[type="submit"]');
+        btn.textContent = '✅ Booked! Ryan Will Be In Touch Within 24 Hours.';
+        btn.disabled = true;
+        btn.style.background = '#16A34A';
+      });
+    }
+  });
 </script>
 </body>
 </html>
