@@ -10,27 +10,10 @@
   <meta property="og:description" content="Interior, exterior, cabinets, commercial, and specialty painting in the Bay Area.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-<!-- Top Bar -->
-<div class="top-bar">
-  <div class="container">
-    <div class="top-bar__left">
-      <span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:4px"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        San Mateo &amp; Bay Area, CA
-      </span>
-      <span>|</span>
-      <a href="mailto:ryan@ryancourtneypainting.com">ryan@ryancourtneypainting.com</a>
-    </div>
-    <div class="top-bar__right">
-      <a href="contact.html" class="btn btn--primary" style="padding:8px 20px;font-size:12px">Get in Touch</a>
-    </div>
-  </div>
-</div>
 
 <!-- Navbar -->
 <nav class="navbar">
@@ -42,10 +25,13 @@
       <a href="services.html" class="active">Services</a>
       <a href="contact.html">Contact</a>
     </div>
-    <a href="tel:6509215694" class="nav-phone">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-      (650) 921-5694
-    </a>
+    <div class="nav-cta">
+      <a href="tel:6509215694" class="nav-phone">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        (650) 921-5694
+      </a>
+      <a href="contact.html" class="btn btn--primary" style="padding:10px 26px;font-size:0.85rem">Free Quote</a>
+    </div>
     <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-nav">
@@ -58,122 +44,230 @@
 </nav>
 
 <!-- Page Hero -->
-<section class="page-hero" style="background-image:url('images/kitchen_finished2.jpg');background-size:cover;background-position:center">
+<section class="page-hero">
   <div class="container">
-    <div class="section-tag" style="color:var(--color-primary)">Our Services</div>
+    <div class="section-tag">Our Services</div>
     <h1>Painting Solutions for Every Need</h1>
     <p>Residential, commercial, interior, exterior &mdash; we deliver premium results on every surface, every time.</p>
   </div>
 </section>
 
-<!-- All Services Grid -->
+<!-- Numbered Services List (Paintly style) -->
 <section class="section">
   <div class="container">
-    <div style="text-align:center;max-width:640px;margin:0 auto 48px">
+    <div style="text-align:center;max-width:640px;margin:0 auto 56px">
       <div class="section-tag" style="justify-content:center">What We Provide</div>
       <h2>Complete Painting &amp; Finishing Services</h2>
     </div>
-    <div class="services-grid fade-in">
+    <div class="numbered-services fade-in">
 
-      <div class="service-card">
-        <div class="service-card__img">
-          <img src="images/interior_after.jpg" alt="Interior painting services" loading="lazy">
-          <div class="arrow-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-        </div>
-        <div class="service-card__body">
+      <div class="numbered-service">
+        <div class="numbered-service__num">[01]</div>
+        <div class="numbered-service__content">
           <h3>Interior Painting</h3>
           <p>Walls, ceilings, trim, and doors. We transform every room with precision brushwork, smooth roller finishes, and clean-cut edges that make your home feel brand new.</p>
         </div>
+        <div class="numbered-service__img">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" alt="Interior painting" loading="lazy">
+        </div>
       </div>
 
-      <div class="service-card">
-        <div class="service-card__img">
-          <img src="images/exterior_home.jpg" alt="Exterior painting services" loading="lazy">
-          <div class="arrow-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-        </div>
-        <div class="service-card__body">
+      <div class="numbered-service">
+        <div class="numbered-service__num">[02]</div>
+        <div class="numbered-service__content">
           <h3>Exterior Painting</h3>
           <p>Siding, stucco, fascia, and trim. We use weather-resistant, UV-stable coatings that protect your home and boost curb appeal for years.</p>
         </div>
+        <div class="numbered-service__img">
+          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80" alt="Exterior painting" loading="lazy">
+        </div>
       </div>
 
-      <div class="service-card">
-        <div class="service-card__img">
-          <img src="images/kitchen_finished.jpg" alt="Cabinet refinishing" loading="lazy">
-          <div class="arrow-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-        </div>
-        <div class="service-card__body">
+      <div class="numbered-service">
+        <div class="numbered-service__num">[03]</div>
+        <div class="numbered-service__content">
           <h3>Cabinet Refinishing</h3>
           <p>Give your kitchen or bathroom a high-end makeover at a fraction of replacement cost. Professional spray and brush finishes that look factory-fresh.</p>
         </div>
+        <div class="numbered-service__img">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" alt="Cabinet refinishing" loading="lazy">
+        </div>
       </div>
 
-      <div class="service-card">
-        <div class="service-card__img">
-          <img src="images/Interior_mediaRoom.jpg" alt="Feature walls" loading="lazy">
-          <div class="arrow-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-        </div>
-        <div class="service-card__body">
+      <div class="numbered-service">
+        <div class="numbered-service__num">[04]</div>
+        <div class="numbered-service__content">
           <h3>Feature Walls &amp; Decorating</h3>
           <p>Bold accent walls, faux finishes, Venetian plaster, and specialty textures that become the focal point of any room.</p>
         </div>
+        <div class="numbered-service__img">
+          <img src="images/Interior_mediaRoom.jpg" alt="Feature walls" loading="lazy">
+        </div>
       </div>
 
-      <div class="service-card">
-        <div class="service-card__img">
-          <img src="images/exterior_home.jpg" alt="Fence and deck staining" loading="lazy">
-          <div class="arrow-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-        </div>
-        <div class="service-card__body">
+      <div class="numbered-service">
+        <div class="numbered-service__num">[05]</div>
+        <div class="numbered-service__content">
           <h3>Fence &amp; Deck Staining</h3>
           <p>Restore and protect outdoor wood surfaces with professional-grade stains and sealers that withstand the Bay Area's coastal climate.</p>
         </div>
+        <div class="numbered-service__img">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Deck staining" loading="lazy">
+        </div>
       </div>
 
-      <div class="service-card">
-        <div class="service-card__img">
-          <img src="images/interior_after2.jpg" alt="Commercial painting" loading="lazy">
-          <div class="arrow-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-        </div>
-        <div class="service-card__body">
+      <div class="numbered-service">
+        <div class="numbered-service__num">[06]</div>
+        <div class="numbered-service__content">
           <h3>Commercial Painting</h3>
           <p>Offices, retail spaces, and multi-unit buildings. We work around your schedule to minimize disruption and deliver on deadline.</p>
         </div>
+        <div class="numbered-service__img">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Commercial painting" loading="lazy">
+        </div>
       </div>
 
-      <div class="service-card">
-        <div class="service-card__img">
-          <img src="images/interior_entryway.jpg" alt="Drywall repair" loading="lazy">
-          <div class="arrow-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-        </div>
-        <div class="service-card__body">
+      <div class="numbered-service">
+        <div class="numbered-service__num">[07]</div>
+        <div class="numbered-service__content">
           <h3>Drywall Repair &amp; Installation</h3>
           <p>Patch holes, fix water damage, and install new drywall with seamless finishing. We handle the prep so the paint looks perfect.</p>
         </div>
+        <div class="numbered-service__img">
+          <img src="images/interior_entryway.jpg" alt="Drywall repair" loading="lazy">
+        </div>
       </div>
 
-      <div class="service-card">
-        <div class="service-card__img">
-          <img src="images/exterior_home.jpg" alt="Pressure washing" loading="lazy">
-          <div class="arrow-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-        </div>
-        <div class="service-card__body">
+      <div class="numbered-service">
+        <div class="numbered-service__num">[08]</div>
+        <div class="numbered-service__content">
           <h3>Pressure Washing</h3>
           <p>Deep clean driveways, walkways, decks, and siding before painting or as a standalone service. Restore surfaces to like-new condition.</p>
         </div>
+        <div class="numbered-service__img">
+          <img src="images/exterior_home.jpg" alt="Pressure washing" loading="lazy">
+        </div>
       </div>
 
-      <div class="service-card">
-        <div class="service-card__img">
-          <img src="images/interior_after.jpg" alt="Wall texturing" loading="lazy">
-          <div class="arrow-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-        </div>
-        <div class="service-card__body">
+      <div class="numbered-service">
+        <div class="numbered-service__num">[09]</div>
+        <div class="numbered-service__content">
           <h3>Wall Texturing</h3>
           <p>Orange peel, knockdown, skip trowel, and smooth finishes. We match existing textures or create something entirely new.</p>
         </div>
+        <div class="numbered-service__img">
+          <img src="images/interior_after.jpg" alt="Wall texturing" loading="lazy">
+        </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- Inline Quote Form (Paintly style) -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="inline-form fade-in">
+      <h2>Request a Free Quote</h2>
+      <p style="color:var(--color-light-text);text-align:center;margin-bottom:32px">Tell us what you need and we'll get back to you within 24 hours with a fixed-price proposal.</p>
+      <form name="service-quote" method="POST" action="/thank-you" data-netlify="true" class="form--dark">
+        <input type="hidden" name="form-name" value="service-quote">
+        <div class="form-row" style="margin-bottom:14px">
+          <div class="form-group">
+            <label for="sq-name">Full Name</label>
+            <input type="text" id="sq-name" name="name" class="form-control" placeholder="John Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="sq-phone">Phone</label>
+            <input type="tel" id="sq-phone" name="phone" class="form-control" placeholder="(555) 123-4567" required>
+          </div>
+        </div>
+        <div class="form-row" style="margin-bottom:14px">
+          <div class="form-group">
+            <label for="sq-email">Email</label>
+            <input type="email" id="sq-email" name="email" class="form-control" placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="sq-service">Service Needed</label>
+            <select id="sq-service" name="service" class="form-control">
+              <option value="">Select a service...</option>
+              <option value="Interior Painting">Interior Painting</option>
+              <option value="Exterior Painting">Exterior Painting</option>
+              <option value="Cabinet Refinishing">Cabinet Refinishing</option>
+              <option value="Commercial Painting">Commercial Painting</option>
+              <option value="Deck & Fence Staining">Deck &amp; Fence Staining</option>
+              <option value="Drywall Repair">Drywall Repair</option>
+              <option value="Pressure Washing">Pressure Washing</option>
+              <option value="Wall Texturing">Wall Texturing</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="sq-message">Project Details</label>
+          <textarea id="sq-message" name="message" class="form-control" placeholder="Describe your project: rooms, surfaces, colors, timeline..." style="border-radius:var(--radius-md)"></textarea>
+        </div>
+        <div style="text-align:center;margin-top:8px">
+          <button type="submit" class="btn btn--primary" style="padding:16px 48px">Send My Request</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;max-width:640px;margin:0 auto 56px">
+      <div class="section-tag" style="justify-content:center">FAQ</div>
+      <h2>Common Questions About Our Services</h2>
+    </div>
+    <div class="faq-list fade-in">
+      <div class="faq-item">
+        <button class="faq-item__question">
+          How do I get started with a painting project?
+          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span>
+        </button>
+        <div class="faq-item__answer">
+          <p>Simply give us a call at (650) 921-5694 or fill out the quote form above. We'll schedule a free on-site inspection, assess your surfaces, discuss your vision, and provide a detailed fixed-price quote within 24 hours.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__question">
+          Do I need to move my furniture before you start?
+          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span>
+        </button>
+        <div class="faq-item__answer">
+          <p>No, our crew handles all furniture moving and protection. We cover floors, furniture, and fixtures with drop cloths and plastic sheeting. Everything goes back exactly where it was when we're done.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__question">
+          What's included in your exterior painting service?
+          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span>
+        </button>
+        <div class="faq-item__answer">
+          <p>Our exterior service includes power washing, scraping, sanding, caulking, priming, and two coats of premium paint. We also paint trim, fascia, eaves, and window frames. All areas are masked and protected.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__question">
+          How long will my exterior paint last?
+          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span>
+        </button>
+        <div class="faq-item__answer">
+          <p>With proper preparation and premium paints, you can expect your exterior paint to last 7&ndash;10 years in the Bay Area climate. We use UV-resistant, weather-rated coatings designed for coastal conditions.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__question">
+          Can you match existing colors exactly?
+          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span>
+        </button>
+        <div class="faq-item__answer">
+          <p>Yes, we can color-match any existing paint using spectrophotometer technology. Whether you need a touch-up or want to match one room to another, we'll get it exactly right.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -182,51 +276,10 @@
 <div class="cta-banner">
   <div class="container">
     <h2>Not Sure Which Service You Need?</h2>
-    <p>Book your free $297 Paint &amp; Prep Inspection and we'll assess your property, recommend the best approach, and give you a fixed-price quote on the spot.</p>
-    <a href="contact.html" class="btn btn--outline">Get Your Free Inspection</a>
+    <p>Book your free Paint &amp; Prep Inspection and we'll assess your property, recommend the best approach, and give you a fixed-price quote on the spot.</p>
+    <a href="contact.html" class="btn btn--primary" style="font-size:1rem;padding:16px 40px">Get Your Free Inspection</a>
   </div>
 </div>
-
-<!-- Story Section -->
-<section class="section section--light">
-  <div class="container">
-    <div class="two-col fade-in">
-      <div class="image-group">
-        <div class="image-group__main">
-          <img src="images/kitchen_finished2.jpg" alt="R. Courtney Painting quality work">
-        </div>
-        <div class="image-group__badge">
-          <div class="badge-number">20+</div>
-          <div class="badge-label">Years Experience</div>
-        </div>
-      </div>
-      <div class="content-col">
-        <div class="section-tag">Our Approach</div>
-        <h2>Every Surface Gets the Full Treatment</h2>
-        <p>We don't cut corners. Every project starts with meticulous surface preparation &mdash; cleaning, sanding, patching, priming &mdash; because great paint only looks great on a properly prepped surface.</p>
-        <ul class="check-list">
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-            Thorough surface cleaning &amp; sanding
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-            Professional-grade primers
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-            Two coats minimum on every surface
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-            Full cleanup &amp; furniture protection
-          </li>
-        </ul>
-        <a href="contact.html" class="btn btn--primary">Request a Quote</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- Footer -->
 <footer class="footer">
@@ -235,7 +288,7 @@
       <div>
         <div class="footer__logo">R. Courtney <span>Painting</span></div>
         <p>Precision craftsmanship for residential and commercial properties throughout San Mateo and the greater Bay Area.</p>
-        <p style="font-size:0.85rem;color:var(--color-muted)"><strong style="color:#fff">Hours:</strong> Mon&ndash;Fri 7am&ndash;7pm &bull; Sat 8am&ndash;5pm &bull; Sun Closed</p>
+        <p style="font-size:0.85rem;color:var(--color-light-text)"><strong style="color:#fff">Hours:</strong> Mon&ndash;Fri 7am&ndash;7pm &bull; Sat 8am&ndash;5pm &bull; Sun Closed</p>
         <div style="margin-top:16px">
           <div class="footer__contact-item">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
@@ -270,10 +323,19 @@
           <a href="services.html">Deck &amp; Fence Staining</a>
         </div>
       </div>
+      <div>
+        <h4>Service Areas</h4>
+        <div class="footer-links">
+          <a href="contact.html">San Mateo</a>
+          <a href="contact.html">Burlingame</a>
+          <a href="contact.html">Foster City</a>
+          <a href="contact.html">Redwood City</a>
+          <a href="contact.html">Belmont</a>
+        </div>
+      </div>
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 R. Courtney Painting. All rights reserved.</span>
-      <span class="footer-license">Fully Licensed, Bonded &amp; Insured</span>
       <span>Designed by <a href="https://truexpanse.com" target="_blank" rel="noopener">TrueXpanse</a></span>
     </div>
   </div>
