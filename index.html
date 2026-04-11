@@ -1,727 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Painter San Mateo CA | R. Courtney Painting — Interior, Exterior & Drywall</title>
-  <meta name="description" content="R. Courtney Painting — Licensed painter serving San Mateo & the Bay Area. Interior, exterior, drywall repair, wall texturing & pressure washing. Free quotes. Call (650) 921-5694." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow:wght@700;800;900&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --navy: #1E3A8A;
-      --navy-dark: #172D6E;
-      --blue-light: #DBEAFE;
-      --amber: #D97706;
-      --amber-light: #FEF3C7;
-      --green: #16A34A;
-      --red: #DC2626;
-      --bg: #ffffff;
-      --bg2: #F8FAFC;
-      --bg3: #EFF6FF;
-      --text: #1E293B;
-      --muted: #64748B;
-      --border: #E2E8F0;
-      --shadow: 0 4px 24px rgba(0,0,0,0.08);
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; }
-    .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
-    img { display: block; max-width: 100%; }
-    a { color: inherit; text-decoration: none; }
-
-    /* BUTTONS */
-    .btn { display: inline-flex; align-items: center; gap: 8px; font-family: 'Inter', sans-serif;
-      font-weight: 600; font-size: 1rem; padding: 14px 28px; border-radius: 6px;
-      border: none; cursor: pointer; transition: transform .15s, box-shadow .15s; text-decoration: none; }
-    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.15); }
-    .btn-primary { background: var(--navy); color: #fff; }
-    .btn-primary:hover { background: var(--navy-dark); }
-    .btn-amber { background: var(--amber); color: #fff; }
-    .btn-amber:hover { background: #B45309; }
-    .btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
-    .btn-outline:hover { background: var(--navy); color: #fff; }
-    .btn-ghost-white { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.45); }
-    .btn-ghost-white:hover { border-color: #fff; }
-    .btn-lg { font-size: 1.125rem; padding: 18px 36px; }
-    .btn-full { width: 100%; justify-content: center; }
-
-    /* SECTIONS */
-    .lp-section { padding: 96px 0; }
-    .lp-section-sm { padding: 64px 0; }
-    .section-tag { display: inline-block; font-size: .75rem; font-weight: 700; letter-spacing: .12em;
-      text-transform: uppercase; color: var(--navy); background: var(--blue-light);
-      padding: 5px 12px; border-radius: 4px; margin-bottom: 16px; }
-    .section-title { font-family: 'Barlow', sans-serif; font-weight: 900; line-height: 1.08;
-      letter-spacing: -.02em; color: var(--text); }
-    .section-title .hl { color: var(--navy); }
-    .section-title .hl-amber { color: var(--amber); }
-    .section-sub { color: var(--muted); font-size: 1.0625rem; line-height: 1.7; max-width: 640px; margin-top: 16px; }
-    .text-center { text-align: center; }
-    .text-center .section-sub { margin: 16px auto 0; }
-    .divider { width: 56px; height: 3px; background: var(--navy); border-radius: 2px; margin: 20px 0; }
-
-    /* OFFER BOX */
-    .offer-box { background: #fff; border: 2px solid var(--navy); border-radius: 12px;
-      padding: 24px 28px; margin: 28px 0 32px; box-shadow: 0 8px 32px rgba(30,58,138,.12);
-      position: relative; }
-    .offer-value-tag { position: absolute; top: -13px; left: 20px;
-      background: var(--amber); color: #fff; font-size: .72rem; font-weight: 800;
-      letter-spacing: .08em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; }
-    .offer-title { font-family: 'Barlow', sans-serif; font-weight: 900;
-      font-size: 1.2rem; color: var(--text); margin-bottom: 10px; }
-    .offer-desc { font-size: .9rem; color: var(--muted); line-height: 1.7; margin-bottom: 14px; }
-    .offer-includes { display: flex; flex-wrap: wrap; gap: 10px 20px; }
-    .offer-includes span { display: flex; align-items: center; gap: 6px;
-      font-size: .8rem; font-weight: 600; color: var(--navy); }
-    .offer-includes svg { color: var(--green); flex-shrink: 0; }
-
-    /* NAV */
-    .nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.97);
-      backdrop-filter: blur(12px); border-bottom: 1px solid var(--border);
-      box-shadow: 0 1px 12px rgba(0,0,0,.06); }
-    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 32px; }
-    .logo { display: flex; align-items: center; gap: 10px; font-family: 'Barlow', sans-serif;
-      font-weight: 900; font-size: 1.1rem; letter-spacing: .02em; color: var(--navy); }
-    .logo em { color: var(--amber); font-style: normal; }
-    .nav-links { display: flex; align-items: center; gap: 28px; }
-    .nav-links a { font-size: .9rem; font-weight: 500; color: var(--muted); transition: color .15s; }
-    .nav-links a:hover { color: var(--navy); }
-    .nav-cta { background: var(--navy); color: #fff !important; font-weight: 700;
-      padding: 9px 20px; border-radius: 5px; font-size: .875rem !important; transition: background .15s; }
-    .nav-cta:hover { background: var(--navy-dark) !important; }
-    .menu-toggle { display: none; flex-direction: column; gap: 5px; background: none;
-      border: none; cursor: pointer; padding: 4px; }
-    .menu-toggle span { display: block; width: 22px; height: 2px; background: var(--navy); border-radius: 2px; }
-    .mobile-menu { display: none; flex-direction: column; background: #fff;
-      border-top: 1px solid var(--border); padding: 16px 24px 20px; gap: 12px; }
-    .mobile-menu.open { display: flex; }
-    .mobile-link { font-size: .95rem; color: var(--text); padding: 6px 0; }
-    .mobile-phone { display: flex; align-items: center; gap: 8px; color: var(--navy); font-weight: 600; }
-    @media (max-width: 767px) { .nav-links { display: none; } .menu-toggle { display: flex; } }
-
-    /* HERO — FULL BLEED */
-    .lp-hero { position: relative; min-height: 92vh; display: flex; align-items: center; overflow: hidden; }
-    .lp-hero-bg { position: absolute; inset: 0; }
-    .lp-hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
-    .lp-hero-overlay { position: absolute; inset: 0;
-      background: linear-gradient(105deg, rgba(8,12,28,.88) 0%, rgba(8,12,28,.78) 50%, rgba(8,12,28,.45) 100%); }
-    .lp-hero-inner { position: relative; z-index: 2; width: 100%;
-      display: grid; grid-template-columns: 1fr 420px; gap: 56px;
-      align-items: center; padding: 100px 0 80px; }
-    /* LEFT — HEADLINE */
-    .hero-left { color: #fff; }
-    .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px;
-      font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
-      color: #F59E0B; border: 1px solid rgba(245,158,11,.45);
-      background: rgba(245,158,11,.12); padding: 6px 14px; border-radius: 4px; margin-bottom: 24px; }
-    .hero-left h1 { font-family: 'Barlow', sans-serif; font-weight: 900;
-      font-size: clamp(2.6rem, 5vw, 4.25rem); line-height: 1.04;
-      letter-spacing: -.03em; color: #fff; margin-bottom: 22px; }
-    .hero-left h1 .hl-amber { color: #F59E0B; }
-    .hero-left-sub { font-size: 1.0625rem; color: rgba(255,255,255,.72);
-      line-height: 1.75; max-width: 520px; margin-bottom: 40px; }
-    .hero-stats { display: flex; gap: 0; flex-wrap: wrap; }
-    .hero-stat { display: flex; flex-direction: column; gap: 4px; padding: 0 28px 0 0; }
-    .hero-stat:first-child { padding-left: 0; }
-    .hero-stat + .hero-stat { border-left: 1px solid rgba(255,255,255,.18); padding-left: 28px; }
-    .hero-stat-num { font-family: 'Barlow', sans-serif; font-weight: 900;
-      font-size: 2.25rem; color: #fff; line-height: 1; }
-    .hero-stat-num span { color: #F59E0B; }
-    .hero-stat-label { font-size: .72rem; color: rgba(255,255,255,.5);
-      letter-spacing: .07em; text-transform: uppercase; }
-    /* RIGHT — OFFER CARD */
-    .hero-offer-card { background: #fff; border-radius: 16px; padding: 36px 32px;
-      box-shadow: 0 32px 80px rgba(0,0,0,.4); position: relative; }
-    .offer-ribbon { position: absolute; top: -1px; right: 22px;
-      background: var(--amber); color: #fff; font-size: .68rem; font-weight: 800;
-      letter-spacing: .1em; text-transform: uppercase;
-      padding: 5px 14px 7px; border-radius: 0 0 10px 10px; }
-    .offer-card-title { font-family: 'Barlow', sans-serif; font-weight: 900;
-      font-size: 1.4rem; color: var(--text); line-height: 1.2; margin-bottom: 6px; }
-    .offer-card-value { display: inline-block; font-size: .78rem; font-weight: 700;
-      color: var(--navy); background: var(--blue-light);
-      padding: 3px 10px; border-radius: 4px; margin-bottom: 14px; }
-    .offer-card-desc { font-size: .875rem; color: var(--muted); line-height: 1.68; margin-bottom: 16px; }
-    .offer-card-includes { list-style: none; display: flex; flex-direction: column; gap: 9px; margin-bottom: 22px; }
-    .offer-card-includes li { display: flex; align-items: center; gap: 9px;
-      font-size: .85rem; font-weight: 600; color: var(--text); }
-    .offer-card-includes svg { color: var(--green); flex-shrink: 0; }
-    .offer-card-divider { height: 1px; background: var(--border); margin: 0 0 20px; }
-    .offer-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-    .offer-form .form-field { margin-bottom: 10px; }
-    .offer-form input, .offer-form select {
-      background: var(--bg2); border: 1.5px solid var(--border); border-radius: 7px;
-      color: var(--text); font-family: 'Inter', sans-serif; font-size: .9rem;
-      padding: 11px 14px; width: 100%; outline: none; transition: border-color .15s; }
-    .offer-form input:focus, .offer-form select:focus { border-color: var(--navy); background: #fff; }
-    .offer-form input::placeholder { color: #b0b8c5; }
-    .offer-cta-btn { width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;
-      background: var(--navy); color: #fff; font-family: 'Barlow', sans-serif;
-      font-weight: 800; font-size: 1.05rem; letter-spacing: .01em;
-      padding: 16px 24px; border: none; border-radius: 8px; cursor: pointer;
-      transition: background .15s, transform .15s; margin-top: 6px; }
-    .offer-cta-btn:hover { background: var(--navy-dark); transform: translateY(-1px); }
-    .offer-cta-note { font-size: .73rem; color: var(--muted); text-align: center; margin-top: 10px; line-height: 1.5; }
-    @media (max-width: 1024px) {
-      .lp-hero-inner { grid-template-columns: 1fr 380px; gap: 40px; }
-    }
-    @media (max-width: 860px) {
-      .lp-hero-inner { grid-template-columns: 1fr; padding: 80px 0 60px; }
-      .hero-left h1 { font-size: clamp(2rem, 8vw, 3rem); }
-      .lp-hero { min-height: auto; }
-    }
-    @media (max-width: 480px) {
-      .hero-offer-card { padding: 28px 20px; }
-      .offer-form .form-row { grid-template-columns: 1fr; }
-    }
-
-    /* TRUST STRIP */
-    .trust-strip { background: var(--navy); padding: 18px 0; }
-    .trust-strip-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 28px; }
-    .ts-item { display: flex; align-items: center; gap: 8px; font-size: .82rem; font-weight: 600;
-      color: rgba(255,255,255,.85); letter-spacing: .03em; text-transform: uppercase; }
-    .ts-item svg { color: #F59E0B; }
-    .ts-dot { width: 1px; height: 20px; background: rgba(255,255,255,.2); }
-    @media (max-width: 640px) { .ts-dot { display: none; } }
-
-    /* PROBLEM */
-    .problem-section { background: var(--bg2); }
-    .problem-intro { max-width: 700px; margin: 0 auto 56px; text-align: center; }
-    .problem-intro p { color: var(--muted); font-size: 1.0625rem; line-height: 1.75; margin-top: 18px; }
-    .problem-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
-    .problem-card { background: #fff; border: 1px solid var(--border); border-top: 3px solid var(--red);
-      border-radius: 8px; padding: 32px 28px; box-shadow: var(--shadow); }
-    .problem-card-icon { font-size: 2.25rem; margin-bottom: 16px; }
-    .problem-card h3 { font-family: 'Barlow', sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--text); margin-bottom: 12px; }
-    .problem-card p { color: var(--muted); font-size: .9375rem; line-height: 1.7; }
-    @media (max-width: 900px) { .problem-cards { grid-template-columns: 1fr; } }
-
-    /* ABOUT */
-    .about-section { background: var(--bg); }
-    .about-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
-    .about-img { border-radius: 12px; overflow: hidden; position: relative; }
-    .about-img img { width: 100%; height: 480px; object-fit: cover; background: #DBEAFE; }
-    .about-img-badge { position: absolute; bottom: 20px; right: 20px;
-      background: var(--amber); color: #fff; border-radius: 10px; padding: 16px 20px; text-align: center; }
-    .about-img-badge .num { font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 2.25rem; line-height: 1; }
-    .about-img-badge .lbl { font-size: .75rem; color: rgba(255,255,255,.85); margin-top: 3px; }
-    .about-content-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin: 24px 0 32px; }
-    .about-content-list li { display: flex; align-items: flex-start; gap: 12px; font-size: .9375rem; color: var(--text); line-height: 1.55; }
-    .chk { width: 22px; height: 22px; background: rgba(22,163,74,.1); border: 1.5px solid rgba(22,163,74,.4);
-      border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; margin-top: 1px; color: var(--green); }
-    @media (max-width: 860px) { .about-layout { grid-template-columns: 1fr; gap: 40px; } .about-img img { height: 300px; } }
-
-    /* SERVICES */
-    .services-section { background: var(--bg3); }
-    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 52px; }
-    .service-card { background: #fff; border: 1px solid var(--border); border-radius: 12px;
-      padding: 32px 28px; transition: transform .2s, box-shadow .2s; box-shadow: 0 2px 12px rgba(0,0,0,.04); }
-    .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(30,58,138,.1); }
-    .service-icon-wrap { width: 52px; height: 52px; background: var(--blue-light);
-      border-radius: 10px; display: flex; align-items: center; justify-content: center;
-      margin-bottom: 20px; color: var(--navy); }
-    .service-card h3 { font-family: 'Barlow', sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--text); margin-bottom: 10px; }
-    .service-card p { color: var(--muted); font-size: .9rem; line-height: 1.65; }
-    @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 580px) { .services-grid { grid-template-columns: 1fr; } }
-
-    /* PHOTO PROOF */
-    .photos-section { background: var(--bg); }
-    .photo-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 48px; }
-    .photo-cell { position: relative; border-radius: 10px; overflow: hidden; aspect-ratio: 4/3; background: #DBEAFE; }
-    .photo-cell img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
-    .photo-cell:hover img { transform: scale(1.04); }
-    .photo-cell-caption { position: absolute; bottom: 0; left: 0; right: 0;
-      background: linear-gradient(transparent, rgba(30,58,138,.8));
-      padding: 28px 14px 12px; font-size: .8rem; font-weight: 600; color: #fff; }
-    @media (max-width: 768px) { .photo-grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 480px) { .photo-grid { grid-template-columns: 1fr; } }
-
-    /* PROCESS */
-    .process-section { background: var(--bg2); }
-    .lp-steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 32px; margin-top: 52px; }
-    .lp-step { background: #fff; border: 1px solid var(--border); border-radius: 12px;
-      padding: 36px 28px; box-shadow: 0 2px 12px rgba(0,0,0,.04); }
-    .lp-step-num { font-family: 'Barlow', sans-serif; font-weight: 900;
-      font-size: 3.5rem; color: var(--blue-light); line-height: 1; margin-bottom: 16px; display: block; }
-    .lp-step h3 { font-family: 'Barlow', sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--text); margin-bottom: 12px; }
-    .lp-step p { color: var(--muted); font-size: .9375rem; line-height: 1.7; }
-    @media (max-width: 767px) { .lp-steps { grid-template-columns: 1fr; gap: 20px; } }
-
-    /* TESTIMONIALS */
-    .testi-section { background: var(--bg); }
-    .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 52px; }
-    .testi-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px;
-      padding: 32px 28px; display: flex; flex-direction: column; gap: 18px; box-shadow: 0 2px 12px rgba(0,0,0,.04); }
-    .testi-stars { color: #F59E0B; font-size: 1.1rem; letter-spacing: 2px; }
-    .testi-quote { font-size: .9375rem; color: var(--muted); line-height: 1.75; font-style: italic; flex: 1; }
-    .testi-author { display: flex; align-items: center; gap: 12px; }
-    .testi-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--navy); color: #fff;
-      font-weight: 800; font-size: .95rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .testi-name { font-weight: 700; font-size: .9rem; color: var(--text); }
-    .testi-loc { font-size: .8rem; color: var(--muted); }
-    @media (max-width: 860px) { .testi-grid { grid-template-columns: 1fr; } }
-
-    /* MID CTA */
-    .mid-cta { background: var(--navy); }
-    .mid-cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
-    .mid-cta h2 { font-family: 'Barlow', sans-serif; font-weight: 900;
-      font-size: clamp(1.5rem, 3vw, 2.25rem); color: #fff; line-height: 1.15; }
-    .mid-cta h2 span { color: #F59E0B; }
-    .mid-cta p { color: rgba(255,255,255,.7); margin-top: 8px; font-size: .9375rem; }
-    .mid-cta-actions { display: flex; gap: 14px; flex-wrap: wrap; flex-shrink: 0; }
-    @media (max-width: 700px) { .mid-cta-inner { flex-direction: column; align-items: flex-start; } }
-
-    /* GUARANTEE */
-    .guarantee-section { background: var(--bg2); }
-    .guarantee-box { background: #fff; border: 2px solid var(--navy); border-radius: 16px;
-      padding: 64px; max-width: 900px; margin: 0 auto; text-align: center;
-      box-shadow: 0 20px 60px rgba(30,58,138,.1); position: relative; overflow: hidden; }
-    .guarantee-box::before { content: ''; position: absolute; inset: 0;
-      background: radial-gradient(ellipse at top, rgba(30,58,138,.04) 0%, transparent 65%); pointer-events: none; }
-    .guarantee-seal { width: 96px; height: 96px; background: var(--navy); border-radius: 50%;
-      display: flex; align-items: center; justify-content: center; margin: 0 auto 28px; position: relative; z-index: 1; }
-    .guarantee-seal svg { width: 44px; height: 44px; color: #fff; }
-    .guarantee-box h2 { font-family: 'Barlow', sans-serif; font-weight: 900;
-      font-size: clamp(1.75rem, 3.5vw, 2.75rem); color: var(--text); letter-spacing: -.02em; margin-bottom: 20px; line-height: 1.1; }
-    .guarantee-box h2 span { color: var(--navy); }
-    .guarantee-text { color: var(--muted); font-size: 1.0625rem; line-height: 1.8; max-width: 680px; margin: 0 auto 32px; }
-    .guarantee-sig { font-size: .9rem; color: var(--muted); font-style: italic; margin-top: 20px; }
-    @media (max-width: 640px) { .guarantee-box { padding: 40px 24px; } }
-
-    /* FAQ */
-    .faq-section { background: var(--bg); }
-    .faq-list { max-width: 780px; margin: 48px auto 0; display: flex; flex-direction: column; gap: 12px; }
-    .faq-item { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
-    .faq-q { width: 100%; text-align: left; background: none; border: none; cursor: pointer;
-      display: flex; align-items: center; justify-content: space-between; gap: 16px;
-      padding: 22px 24px; color: var(--text); font-family: 'Inter', sans-serif; font-weight: 600;
-      font-size: .975rem; transition: background .15s; }
-    .faq-q:hover { background: rgba(30,58,138,.03); }
-    .faq-icon { width: 24px; height: 24px; border-radius: 50%; background: var(--blue-light);
-      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-      color: var(--navy); transition: transform .25s; }
-    .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--navy); color: #fff; }
-    .faq-a { display: none; padding: 0 24px 22px; color: var(--muted); font-size: .9375rem; line-height: 1.75; }
-    .faq-item.open .faq-a { display: block; }
-
-    /* FINAL CTA */
-    .final-cta { background: var(--bg3); }
-    .final-cta-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
-    .final-left h2 { font-family: 'Barlow', sans-serif; font-weight: 900;
-      font-size: clamp(2rem, 3.5vw, 2.75rem); color: var(--text); line-height: 1.1;
-      letter-spacing: -.025em; margin-bottom: 16px; }
-    .final-left h2 .hl { color: var(--navy); }
-    .final-left p { color: var(--muted); font-size: 1rem; line-height: 1.75; margin-bottom: 32px; }
-    .final-bullets { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-    .final-bullets li { display: flex; align-items: center; gap: 12px; font-size: .9375rem; color: var(--text); }
-    .final-bullets li svg { flex-shrink: 0; color: var(--green); }
-    .final-contact { margin-top: 32px; display: flex; flex-direction: column; gap: 12px; }
-    .final-contact a { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: .9375rem; transition: color .15s; }
-    .final-contact a:hover { color: var(--navy); }
-    .lp-form { background: #fff; border: 1px solid var(--border); border-radius: 14px;
-      padding: 40px 36px; box-shadow: 0 12px 40px rgba(30,58,138,.1); }
-    .lp-form h3 { font-family: 'Barlow', sans-serif; font-weight: 800; font-size: 1.3rem; color: var(--text); margin-bottom: 24px; }
-    .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
-    .form-group label { font-size: .82rem; font-weight: 600; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
-    .form-group input, .form-group select, .form-group textarea {
-      background: var(--bg2); border: 1.5px solid var(--border); border-radius: 7px;
-      color: var(--text); font-family: 'Inter', sans-serif; font-size: .95rem;
-      padding: 12px 14px; width: 100%; outline: none; transition: border-color .15s; }
-    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--navy); background: #fff; }
-    .form-group textarea { resize: vertical; min-height: 96px; }
-    .form-note { font-size: .78rem; color: var(--muted); margin-top: 10px; text-align: center; }
-    @media (max-width: 860px) { .final-cta-layout { grid-template-columns: 1fr; gap: 48px; } .lp-form { padding: 28px 20px; } }
-
-    /* FOOTER */
-    .footer { background: var(--text); padding-top: 64px; }
-    .footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
-      padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.1); }
-    .footer-brand .logo { color: #fff; margin-bottom: 16px; }
-    .footer-brand p { color: rgba(255,255,255,.5); font-size: .875rem; line-height: 1.7; margin-bottom: 14px; }
-    .footer-phone { display: block; color: #F59E0B; font-weight: 700; font-size: 1.125rem; margin-bottom: 8px; }
-    .footer-address { font-size: .82rem; color: rgba(255,255,255,.45); line-height: 1.65; margin-bottom: 8px; font-style: normal; }
-    .footer-col h4 { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.35); margin-bottom: 16px; }
-    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
-    .footer-col ul li a { font-size: .875rem; color: rgba(255,255,255,.5); transition: color .15s; }
-    .footer-col ul li a:hover { color: #fff; }
-    .footer-bottom { padding: 20px 0; text-align: center; }
-    .footer-bottom p { font-size: .8rem; color: rgba(255,255,255,.2); }
-    @media (max-width: 860px) { .footer-inner { grid-template-columns: 1fr 1fr; } .footer-brand { grid-column: 1 / -1; } }
-    @media (max-width: 480px) { .footer-inner { grid-template-columns: 1fr; } }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R. Courtney Painting | Premium Residential & Commercial Painting in San Mateo & Bay Area</title>
+  <meta name="description" content="R. Courtney Painting delivers expert interior, exterior, and cabinet painting in San Mateo and the Bay Area. 20+ years experience. Licensed & insured. Get your free paint inspection today.">
+  <link rel="canonical" href="https://ryan-courtney-painting.netlify.app/">
+  <meta property="og:title" content="R. Courtney Painting | San Mateo & Bay Area Painting Experts">
+  <meta property="og:description" content="Premium residential and commercial painting. 20+ years of precision craftsmanship in the Bay Area.">
+  <meta property="og:image" content="images/exterior_home.jpg">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "R. Courtney Painting",
+    "description": "Premium residential and commercial painting services in San Mateo and the Bay Area.",
+    "telephone": "(650) 921-5694",
+    "email": "ryan@ryancourtneypainting.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "34 Creekridge Ct",
+      "addressLocality": "San Mateo",
+      "addressRegion": "CA",
+      "postalCode": "94402"
+    },
+    "areaServed": "San Mateo & Bay Area",
+    "openingHours": ["Mo-Fr 07:00-19:00", "Sa 08:00-17:00"],
+    "url": "https://ryan-courtney-painting.netlify.app"
+  }
+  </script>
 </head>
 <body>
 
-<!-- ═══ NAV ═══ -->
-<nav class="nav" id="nav">
-  <div class="nav-inner container">
-    <a href="#" class="logo" aria-label="Ryan Courtney Painting Home">
-      <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-        <circle cx="15" cy="15" r="14" fill="#EFF6FF" stroke="#1E3A8A" stroke-width="1.5"/>
-        <path d="M10 21 Q15 9 20 21" stroke="#1E3A8A" stroke-width="2" fill="none" stroke-linecap="round"/>
-        <circle cx="15" cy="14" r="2.5" fill="#D97706"/>
-      </svg>
-      Ryan Courtney <em>&nbsp;Painting</em>
-    </a>
-    <div class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#work">Our Work</a>
-      <a href="#process">Process</a>
-      <a href="#faq">FAQ</a>
-      <a href="tel:+16509215694" style="color:var(--navy);font-weight:600;">📞 (650) 921-5694</a>
-      <a href="#quote" class="nav-cta">Free Inspection ($297 Value)</a>
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar__left">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:4px"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        San Mateo &amp; Bay Area, CA
+      </span>
+      <span>|</span>
+      <a href="mailto:ryan@ryancourtneypainting.com">ryan@ryancourtneypainting.com</a>
     </div>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#services" class="mobile-link">Services</a>
-    <a href="#work" class="mobile-link">Our Work</a>
-    <a href="#process" class="mobile-link">Process</a>
-    <a href="#faq" class="mobile-link">FAQ</a>
-    <a href="tel:+16509215694" class="mobile-phone">📞 (650) 921-5694</a>
-    <a href="#quote" class="btn btn-primary btn-full" style="margin-top:8px;">Get a Free Quote</a>
-  </div>
-</nav>
-
-<!-- ═══ HERO ═══ -->
-<section class="lp-hero">
-  <!-- Full-bleed background -->
-  <div class="lp-hero-bg">
-    <img src="images/interior_after.jpg" alt="Beautifully painted luxury interior by R. Courtney Painting" />
-  </div>
-  <div class="lp-hero-overlay"></div>
-
-  <div class="container lp-hero-inner">
-
-    <!-- LEFT — Headline + Stats -->
-    <div class="hero-left">
-      <div class="hero-eyebrow">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        San Mateo &amp; Bay Area — Licensed &amp; Insured
-      </div>
-      <h1>Your Home Deserves a <span class="hl-amber">Flawless Finish.</span><br>Not Excuses.</h1>
-      <p class="hero-left-sub">R. Courtney Painting delivers premium interior &amp; exterior painting, drywall repair, wall texturing, and pressure washing — with meticulous prep, clean lines, and results that actually last. No mess. No shortcuts.</p>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <span class="hero-stat-num">500<span>+</span></span>
-          <span class="hero-stat-label">Homes Painted</span>
-        </div>
-        <div class="hero-stat">
-          <span class="hero-stat-num">10<span>+</span></span>
-          <span class="hero-stat-label">Years Experience</span>
-        </div>
-        <div class="hero-stat">
-          <span class="hero-stat-num">★ 5.0</span>
-          <span class="hero-stat-label">Google Rating</span>
-        </div>
-      </div>
+    <div class="top-bar__right">
+      <a href="contact.html" class="btn btn--primary" style="padding:8px 20px;font-size:12px">Get in Touch</a>
     </div>
-
-    <!-- RIGHT — Offer Card -->
-    <div class="hero-offer-card">
-      <div class="offer-ribbon">$297 Value — FREE</div>
-      <div class="offer-card-title">🎨 Free Paint &amp; Prep Inspection</div>
-      <span class="offer-card-value">Complimentary — No Obligation</span>
-      <p class="offer-card-desc">Ryan personally comes to your home, inspects every surface, flags prep issues most painters miss, consults on colour, and hands you a detailed written scope — at zero cost.</p>
-      <ul class="offer-card-includes">
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Full surface &amp; prep assessment</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> In-home colour consultation</li>
-        <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Written scope &amp; fixed-price quote</li>
-      </ul>
-      <div class="offer-card-divider"></div>
-      <form class="offer-form" id="heroForm">
-        <div class="form-row">
-          <div class="form-field">
-            <input type="text" name="name" placeholder="Your Name" required />
-          </div>
-          <div class="form-field">
-            <input type="tel" name="phone" placeholder="Phone Number" required />
-          </div>
-        </div>
-        <div class="form-field">
-          <select name="service">
-            <option value="">What do you need painted?</option>
-            <option>Interior Painting</option>
-            <option>Exterior Painting</option>
-            <option>Interior + Exterior</option>
-            <option>Cabinet Refinishing</option>
-            <option>Drywall Repair</option>
-            <option>Not sure — need advice</option>
-          </select>
-        </div>
-        <button type="submit" class="offer-cta-btn">Book My Free Inspection →</button>
-        <p class="offer-cta-note">🔒 No obligation. Ryan responds within 24 hours.</p>
-      </form>
-    </div>
-
-  </div>
-</section>
-
-<!-- ═══ TRUST STRIP ═══ -->
-<div class="trust-strip">
-  <div class="container trust-strip-inner">
-    <span class="ts-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Licensed &amp; Insured</span>
-    <span class="ts-dot"></span>
-    <span class="ts-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 10+ Years Experience</span>
-    <span class="ts-dot"></span>
-    <span class="ts-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 500+ Homes Painted</span>
-    <span class="ts-dot"></span>
-    <span class="ts-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 5-Star Google Rated</span>
-    <span class="ts-dot"></span>
-    <span class="ts-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Satisfaction Guaranteed</span>
   </div>
 </div>
 
-<!-- ═══ PROBLEM ═══ -->
-<section class="lp-section problem-section">
+<!-- Navbar -->
+<nav class="navbar">
   <div class="container">
-    <div class="problem-intro">
-      <span class="section-tag">Sound Familiar?</span>
-      <h2 class="section-title" style="font-size:clamp(1.75rem,3.5vw,2.75rem);">Getting a Painter Shouldn't Feel Like <span class="hl-amber">This Much of a Gamble</span></h2>
-      <p>Most homeowners have at least one horror story. The painter who ghosted mid-job. The "cheap quote" that ballooned. The walls that looked great for six months — then peeled. You deserve better.</p>
+    <a href="index.html" class="navbar__logo">R. Courtney <span>Painting</span></a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
     </div>
-    <div class="problem-cards">
-      <div class="problem-card">
-        <div class="problem-card-icon">😤</div>
-        <h3>No-Shows &amp; Ghost Quotes</h3>
-        <p>You waited for three painters to show up. One came, gave a vague ballpark, and never responded again. Finding someone who shows up, does what they say, and finishes when they promise is surprisingly rare.</p>
-      </div>
-      <div class="problem-card">
-        <div class="problem-card-icon">💸</div>
-        <h3>Cheap Work That Doesn't Last</h3>
-        <p>You went with the lowest bidder. They skipped prep, used cheap paint, and left brush marks you can see from across the room. Within a year the edges are cracking — and you're back paying again.</p>
-      </div>
-      <div class="problem-card">
-        <div class="problem-card-icon">🏠</div>
-        <h3>Your Home Left a Mess</h3>
-        <p>Paint on your floors, hardware and trim. Furniture that wasn't moved properly. No protection on your carpet. The job "finished" but now you're spending a weekend cleaning up. Unacceptable.</p>
-      </div>
-    </div>
+    <a href="tel:6509215694" class="nav-phone">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      (650) 921-5694
+    </a>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-</section>
-
-<!-- ═══ ABOUT ═══ -->
-<section class="lp-section about-section" id="about">
-  <div class="container about-layout">
-    <div class="about-img">
-      <img src="images/interior_entryway.jpg" alt="Premium interior painting by R. Courtney Painting — San Mateo CA" loading="lazy" />
-      <div class="about-img-badge">
-        <div class="num">10+</div>
-        <div class="lbl">Years in the Trade</div>
-      </div>
-    </div>
-    <div>
-      <span class="section-tag">Why Ryan Courtney</span>
-      <h2 class="section-title" style="font-size:clamp(1.75rem,3vw,2.5rem);">Owner-Operated. <span class="hl">Every Job Gets Ryan.</span></h2>
-      <div class="divider"></div>
-      <p style="color:var(--muted);line-height:1.75;font-size:1.0625rem;">When you hire Ryan Courtney Painting &amp; Decorating, you're not getting a rotating crew of strangers. Ryan personally oversees every single project — from the first colour consultation to the final walk-through. No subcontracting. No surprises.</p>
-      <ul class="about-content-list">
-        <li>
-          <span class="chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-          <span><strong>Meticulous surface prep</strong> — the single biggest factor in how long paint lasts</span>
-        </li>
-        <li>
-          <span class="chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-          <span><strong>Premium-grade paints only</strong> — no cheap products that compromise the finish or longevity</span>
-        </li>
-        <li>
-          <span class="chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-          <span><strong>Your home fully protected</strong> — floors, furniture, and fixtures covered before a drop is opened</span>
-        </li>
-        <li>
-          <span class="chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-          <span><strong>Clean site, every day</strong> — Ryan leaves your home tidy at the end of every single shift</span>
-        </li>
-        <li>
-          <span class="chk"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-          <span><strong>Fixed-price quotes</strong> — the number you see is the number you pay</span>
-        </li>
-      </ul>
-      <a href="#quote" class="btn btn-primary btn-lg">Get Your Free Quote →</a>
-    </div>
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="tel:6509215694" class="btn btn--primary">Call (650) 921-5694</a>
   </div>
-</section>
+</nav>
 
-<!-- ═══ SERVICES ═══ -->
-<section class="lp-section services-section" id="services">
+<!-- Hero -->
+<section class="hero">
+  <div class="hero__slides">
+    <div class="hero__slide active" style="background-image:url('images/interior_after.jpg')"></div>
+    <div class="hero__slide" style="background-image:url('images/exterior_home.jpg')"></div>
+    <div class="hero__slide" style="background-image:url('images/kitchen_finished.jpg')"></div>
+    <div class="hero__slide" style="background-image:url('images/Interior_mediaRoom.jpg')"></div>
+  </div>
+  <div class="hero__overlay"></div>
   <div class="container">
-    <div class="text-center">
-      <span class="section-tag">What We Do</span>
-      <h2 class="section-title" style="font-size:clamp(1.75rem,3vw,2.5rem);">Every Surface. <span class="hl">Every Finish.</span> Done Right.</h2>
-      <p class="section-sub">From a single feature wall to a full exterior repaint — handled with the same care and craftsmanship every time.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon-wrap">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        </div>
-        <h3>Interior Painting</h3>
-        <p>Living rooms, bedrooms, kitchens, bathrooms — ceilings, walls, and trim done to a showroom standard. Colour consultation included.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon-wrap">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 20h20M4 20V8l8-6 8 6v12"/><rect x="9" y="14" width="6" height="6"/></svg>
-        </div>
-        <h3>Exterior Painting</h3>
-        <p>Full prep, prime, and paint. We address rot, cracking, and peeling before we start — so the finish lasts years, not months.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon-wrap">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        </div>
-        <h3>Feature Walls &amp; Decorating</h3>
-        <p>Wallpaper hanging, limewash, Venetian plaster, and decorative finishes — turn an ordinary wall into a statement piece.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon-wrap">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 3H8a2 2 0 00-2 2v2h12V5a2 2 0 00-2-2z"/></svg>
-        </div>
-        <h3>Cabinet Refinishing</h3>
-        <p>Transform your kitchen without the cost of replacement. Factory-smooth cabinet repaints that look brand new and last for years.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon-wrap">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-        </div>
-        <h3>Fence &amp; Deck Staining</h3>
-        <p>Timber protection that looks great and fights the weather. Oil, stain, and paint options suited to your timber type and style.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon-wrap">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-        </div>
-        <h3>Commercial Painting</h3>
-        <p>Offices, retail spaces, and commercial buildings across the Bay Area. Minimal disruption, professional results, on schedule.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon-wrap">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 13h6v9H9z"/></svg>
-        </div>
-        <h3>Drywall Repair &amp; Installation</h3>
-        <p>Patches, full drywall replacement, wall texturing, and finish work — all prepped and painted to a seamless result.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon-wrap">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v6M6 6l4 4M18 6l-4 4M3 12h6M15 12h6M6 18l4-4M18 18l-4-4M12 16v6"/></svg>
-        </div>
-        <h3>Pressure Washing</h3>
-        <p>Driveways, decks, siding, and fences — deep cleaned before painting or as a standalone service to restore curb appeal.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ PHOTO PROOF ═══ -->
-<section class="lp-section photos-section" id="work">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-tag">Our Work</span>
-      <h2 class="section-title" style="font-size:clamp(1.75rem,3vw,2.5rem);">Results That <span class="hl">Speak for Themselves</span></h2>
-      <p class="section-sub">Real projects. Real homes. Every photo is a job we completed — no stock images.</p>
-    </div>
-    <div class="photo-grid">
-      <div class="photo-cell">
-        <img src="images/interior_after.jpg" alt="Interior full repaint — after" loading="lazy" />
-        <div class="photo-cell-caption">Interior Full Repaint</div>
-      </div>
-      <div class="photo-cell">
-        <img src="images/exterior_home.jpg" alt="Exterior home repaint San Mateo" loading="lazy" />
-        <div class="photo-cell-caption">Exterior Repaint</div>
-      </div>
-      <div class="photo-cell">
-        <img src="images/Interior_mediaRoom.jpg" alt="Media room interior painting" loading="lazy" />
-        <div class="photo-cell-caption">Interior — Media Room</div>
-      </div>
-      <div class="photo-cell">
-        <img src="images/kitchen_finished.jpg" alt="Kitchen finished painting" loading="lazy" />
-        <div class="photo-cell-caption">Kitchen Refresh</div>
-      </div>
-      <div class="photo-cell">
-        <img src="images/interior_after2.jpg" alt="Interior after repaint" loading="lazy" />
-        <div class="photo-cell-caption">Interior Transformation</div>
-      </div>
-      <div class="photo-cell">
-        <img src="images/kitchen_finished2.jpg" alt="Kitchen finished — second view" loading="lazy" />
-        <div class="photo-cell-caption">Kitchen — Finished</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ PROCESS ═══ -->
-<section class="lp-section process-section" id="process">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-tag">How It Works</span>
-      <h2 class="section-title" style="font-size:clamp(1.75rem,3vw,2.5rem);">Simple, <span class="hl">Stress-Free</span> From Start to Finish</h2>
-      <p class="section-sub">No runaround, no vague timelines, no surprises. Just clear communication and quality work.</p>
-    </div>
-    <div class="lp-steps">
-      <div class="lp-step">
-        <span class="lp-step-num">01</span>
-        <h3>Free Quote &amp; Colour Consult</h3>
-        <p>Ryan comes to you — measures up, walks through your vision, and gives you a fixed written quote within 24 hours. No obligation. No sales pressure. Just clear numbers.</p>
-      </div>
-      <div class="lp-step">
-        <span class="lp-step-num">02</span>
-        <h3>Prep, Protect &amp; Paint</h3>
-        <p>Every surface properly cleaned, filled, and primed. Your home fully protected. Then the paint goes on — smooth, even, and precisely the way you envisioned it.</p>
-      </div>
-      <div class="lp-step">
-        <span class="lp-step-num">03</span>
-        <h3>Walk-Through &amp; Warranty</h3>
-        <p>Ryan walks every inch of the job with you before calling it done. Touch-ups handled on the spot. Your warranty starts the day we leave — you're fully protected.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ TESTIMONIALS ═══ -->
-<section class="lp-section testi-section" id="testimonials">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-tag">What Clients Say</span>
-      <h2 class="section-title" style="font-size:clamp(1.75rem,3vw,2.5rem);">Don't Take Our Word For It</h2>
-      <p class="section-sub">Real reviews from real homeowners who trusted Ryan Courtney Painting with their homes.</p>
-    </div>
-    <div class="testi-grid">
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-quote">"We had two other painters quote before Ryan. His price was fair, but what sold us was how thorough he was. He noticed rot under the eaves that no one else mentioned. The house looks incredible — it's been 18 months and not a single issue."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">SB</div>
-          <div>
-            <div class="testi-name">Sarah B.</div>
-            <div class="testi-loc">Full Exterior Repaint</div>
+    <div class="hero__content">
+      <div class="hero__text">
+        <div class="section-tag" style="color:#fff">San Mateo's Trusted Painters</div>
+        <h1>Precision Craftsmanship for Your <span>Most Valued Spaces</span></h1>
+        <p>From stunning interiors to durable exteriors, R. Courtney Painting delivers flawless results backed by 20+ years of Bay Area expertise.</p>
+        <div class="hero__badges">
+          <div class="hero__badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            Licensed &amp; Insured
+          </div>
+          <div class="hero__badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>
+            Bay Area Wide
+          </div>
+          <div class="hero__badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            5-Star Rated
           </div>
         </div>
       </div>
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-quote">"I was genuinely shocked by how clean he left our house at the end of every day. Not a drop on the floors, hardware all protected. The finish on our kitchen cabinets is smoother than I expected — honestly looks factory-sprayed."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">MT</div>
+      <div class="hero__card">
+        <h3>Free $297 Paint &amp; Prep Inspection</h3>
+        <p class="offer-value">We'll assess surfaces, prep needs &amp; give you an exact fixed price. No surprises.</p>
+        <form name="hero-contact" method="POST" action="/thank-you" data-netlify="true">
+          <input type="hidden" name="form-name" value="hero-contact">
+          <div class="form-group">
+            <label for="hero-name">Your Name</label>
+            <input type="text" id="hero-name" name="name" class="form-control" placeholder="John Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="hero-phone">Phone Number</label>
+            <input type="tel" id="hero-phone" name="phone" class="form-control" placeholder="(555) 123-4567" required>
+          </div>
+          <div class="form-group">
+            <label for="hero-service">Service Needed</label>
+            <select id="hero-service" name="service" class="form-control" required>
+              <option value="">Select a service...</option>
+              <option value="Interior Painting">Interior Painting</option>
+              <option value="Exterior Painting">Exterior Painting</option>
+              <option value="Cabinet Refinishing">Cabinet Refinishing</option>
+              <option value="Commercial Painting">Commercial Painting</option>
+              <option value="Deck & Fence Staining">Deck &amp; Fence Staining</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center">Claim My Free Inspection</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Strip -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+      Licensed &amp; Insured
+    </div>
+    <div class="trust-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      5-Star Yelp Reviews
+    </div>
+    <div class="trust-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+      20+ Years Experience
+    </div>
+    <div class="trust-item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+      San Mateo &amp; Bay Area
+    </div>
+  </div>
+</div>
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span class="marquee__item">R. Courtney Painting <span>&bull;</span> Interior &amp; Exterior <span>&bull;</span> Precision Craftsmanship <span>&bull;</span> San Mateo Bay Area <span>&bull;</span> Cabinet Refinishing <span>&bull;</span> Commercial Painting</span>
+    <span class="marquee__item">R. Courtney Painting <span>&bull;</span> Interior &amp; Exterior <span>&bull;</span> Precision Craftsmanship <span>&bull;</span> San Mateo Bay Area <span>&bull;</span> Cabinet Refinishing <span>&bull;</span> Commercial Painting</span>
+  </div>
+</div>
+
+<!-- Services -->
+<section class="section" id="services">
+  <div class="container">
+    <div style="text-align:center;max-width:640px;margin:0 auto 48px">
+      <div class="section-tag" style="justify-content:center">What We Provide</div>
+      <h2>Expert Painting Solutions for Every Surface</h2>
+      <p style="margin-top:12px;color:var(--color-muted)">From a single accent wall to a full commercial buildout, our crew delivers magazine-quality results on time and on budget.</p>
+    </div>
+    <div class="services-grid fade-in">
+      <div class="service-card">
+        <div class="service-card__img">
+          <img src="images/interior_after.jpg" alt="Interior painting" loading="lazy">
+          <div class="arrow-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+        </div>
+        <div class="service-card__body">
+          <h3>Interior Painting</h3>
+          <p>Transform living rooms, bedrooms, kitchens, and hallways with expert color and flawless finish.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-card__img">
+          <img src="images/exterior_home.jpg" alt="Exterior painting" loading="lazy">
+          <div class="arrow-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+        </div>
+        <div class="service-card__body">
+          <h3>Exterior Painting</h3>
+          <p>Weather-resistant coatings that protect and elevate your home's curb appeal for years to come.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-card__img">
+          <img src="images/kitchen_finished.jpg" alt="Cabinet refinishing" loading="lazy">
+          <div class="arrow-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+        </div>
+        <div class="service-card__body">
+          <h3>Cabinet Refinishing</h3>
+          <p>Breathe new life into dated cabinets with professional spray or brush finishes at a fraction of replacement cost.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-card__img">
+          <img src="images/Interior_mediaRoom.jpg" alt="Feature walls and decorating" loading="lazy">
+          <div class="arrow-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+        </div>
+        <div class="service-card__body">
+          <h3>Feature Walls &amp; Decorating</h3>
+          <p>Bold accent walls, textured finishes, and decorative techniques that make a statement.</p>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="services.html" class="btn btn--dark">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- About / Story -->
+<section class="section section--light" id="about">
+  <div class="container">
+    <div class="two-col fade-in">
+      <div class="image-group">
+        <div class="image-group__main">
+          <img src="images/interior_entryway.jpg" alt="R. Courtney Painting craftsmanship">
+        </div>
+        <div class="image-group__badge">
+          <div class="badge-number">20+</div>
+          <div class="badge-label">Years Experience</div>
+        </div>
+      </div>
+      <div class="content-col">
+        <div class="section-tag">About Us</div>
+        <h2>Bay Area's Most Trusted Painting Professionals</h2>
+        <p>R. Courtney Painting has been delivering exceptional residential and commercial painting throughout the San Mateo and Bay Area for over two decades. Owner Ryan Courtney personally oversees every project, ensuring meticulous prep, premium materials, and a finish that stands the test of time.</p>
+        <ul class="check-list">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Premium paints and coatings only
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Owner on every jobsite
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Meticulous surface prep &amp; cleanup
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Fixed pricing &mdash; no hidden costs
+          </li>
+        </ul>
+        <a href="about.html" class="btn btn--dark">More About Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div style="text-align:center;max-width:640px;margin:0 auto 48px">
+      <div class="section-tag" style="justify-content:center">Our Work</div>
+      <h2>See the Courtney Difference</h2>
+    </div>
+    <div class="gallery-grid fade-in">
+      <div class="gallery-item"><img src="images/interior_after.jpg" alt="Interior painting project" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/kitchen_finished.jpg" alt="Kitchen cabinet refinishing" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/Interior_mediaRoom.jpg" alt="Media room painting" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/interior_after2.jpg" alt="Interior painting after" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/exterior_home.jpg" alt="Exterior home painting" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/interior_entryway.jpg" alt="Entryway painting" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/kitchen_finished2.jpg" alt="Kitchen painting project" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/interior_after.jpg" alt="Completed interior project" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="section section--dark">
+  <div class="container">
+    <div style="text-align:center;max-width:640px;margin:0 auto 48px">
+      <div class="section-tag" style="justify-content:center;color:var(--color-primary)">How It Works</div>
+      <h2 style="color:#fff">Your Project in 4 Simple Steps</h2>
+    </div>
+    <div class="process-grid fade-in">
+      <div class="process-step">
+        <div class="process-step__number">1</div>
+        <h4 style="color:#fff">Free Inspection</h4>
+        <p>We visit your property, assess every surface, and discuss your vision in detail.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__number">2</div>
+        <h4 style="color:#fff">Fixed Price Quote</h4>
+        <p>You receive a detailed, no-surprise proposal within 24 hours. The price you see is the price you pay.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__number">3</div>
+        <h4 style="color:#fff">Expert Execution</h4>
+        <p>Our skilled crew handles meticulous prep, premium application, and thorough cleanup.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__number">4</div>
+        <h4 style="color:#fff">Final Walkthrough</h4>
+        <p>Ryan personally walks the job with you. We don't leave until you're thrilled with every detail.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section section--light" id="testimonials">
+  <div class="container">
+    <div style="text-align:center;max-width:640px;margin:0 auto 48px">
+      <div class="section-tag" style="justify-content:center">Testimonials</div>
+      <h2>What Our Clients Say</h2>
+    </div>
+    <div class="testimonials-grid fade-in">
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Ryan and his team painted our entire home interior. The attention to detail was incredible &mdash; clean lines, perfect edges, and they left our house spotless. Highly recommend!"</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">M</div>
           <div>
-            <div class="testi-name">Mark T.</div>
-            <div class="testi-loc">Interior Paint + Cabinet Refinish</div>
+            <div class="testimonial-card__name">Maria S.</div>
+            <div class="testimonial-card__role">San Mateo Homeowner</div>
           </div>
         </div>
       </div>
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-quote">"After a nightmare with another painter who left mid-job, I was nervous. Ryan was the complete opposite — professional, honest, and the results blew me away. The feature wall in our lounge gets compliments every time someone visits."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">KH</div>
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"We needed our office building repainted on a tight timeline. R. Courtney Painting delivered on time, on budget, and the quality was outstanding. Our tenants love it."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">D</div>
           <div>
-            <div class="testi-name">Karen H.</div>
-            <div class="testi-loc">Interior + Feature Wall</div>
+            <div class="testimonial-card__name">David K.</div>
+            <div class="testimonial-card__role">Commercial Property Manager</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Had our kitchen cabinets refinished instead of replacing them. They look brand new and we saved thousands. Ryan's craftsmanship is top-notch."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">J</div>
+          <div>
+            <div class="testimonial-card__name">Jennifer L.</div>
+            <div class="testimonial-card__role">Burlingame Homeowner</div>
           </div>
         </div>
       </div>
@@ -729,219 +367,145 @@
   </div>
 </section>
 
-<!-- ═══ MID CTA ═══ -->
-<section class="lp-section-sm mid-cta">
-  <div class="container mid-cta-inner">
-    <div>
-      <h2>Claim Your <span>Free $297 Paint &amp; Prep Inspection</span></h2>
-      <p>Ryan assesses your home, consults on colour, and hands you a written scope. Zero cost. Zero obligation.</p>
-    </div>
-    <div class="mid-cta-actions">
-      <a href="#quote" class="btn btn-amber btn-lg">Book My Free Inspection →</a>
-      <a href="tel:+16509215694" class="btn btn-ghost-white btn-lg">📞 Call Ryan Now</a>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ GUARANTEE ═══ -->
-<section class="lp-section guarantee-section">
+<!-- CTA Banner -->
+<div class="cta-banner">
   <div class="container">
-    <div class="guarantee-box">
-      <div class="guarantee-seal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-          <polyline points="9 12 11 14 15 10" stroke-width="2.5"/>
-        </svg>
-      </div>
-      <span class="section-tag" style="margin-bottom:16px;">Our Promise To You</span>
-      <h2>100% Satisfaction Guarantee — <span>Or We Come Back.</span></h2>
-      <p class="guarantee-text">If you're not completely happy with any aspect of the finished work, call Ryan within 14 days and he'll return to fix it at no cost. No arguments, no excuses, no invoice. That's not a marketing line — it's a commitment Ryan stands behind personally on every single job.</p>
-      <a href="#quote" class="btn btn-primary btn-lg">Book My Free Inspection →</a>
-      <p class="guarantee-sig">— Ryan Courtney, Owner &amp; Head Painter</p>
-    </div>
+    <h2>Ready to Transform Your Space?</h2>
+    <p>Book your free $297 Paint &amp; Prep Inspection today. No obligations, no pressure &mdash; just expert advice and a fixed-price quote.</p>
+    <a href="contact.html" class="btn btn--outline">Schedule Your Free Inspection</a>
   </div>
-</section>
+</div>
 
-<!-- ═══ FAQ ═══ -->
-<section class="lp-section faq-section" id="faq">
+<!-- Contact / Quote Form -->
+<section class="section" id="contact">
   <div class="container">
-    <div class="text-center">
-      <span class="section-tag">FAQ</span>
-      <h2 class="section-title" style="font-size:clamp(1.75rem,3vw,2.5rem);">Questions? <span class="hl">We've Got You.</span></h2>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-q">How quickly can you start my job?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">Current availability varies by season, but Ryan typically books 2–4 weeks out. Reach out now to lock in your spot — spring and summer fill up fast.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Do I need to move my furniture?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">No. Ryan and his team handle all furniture moving and covering as part of the job. Your belongings will be fully protected before any work starts.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">What paint brands do you use?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">We exclusively use premium-grade paints. We never use discount products that compromise the finish or longevity of your paint job.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Can you help me choose colours?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">Absolutely. Colour consultation is included with every quote. Ryan will bring swatches, discuss your style, and help you choose combinations that work with your lighting and existing décor.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Is the quoted price the final price?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">Yes. Ryan provides fixed-price quotes — the number you receive is the number on the final invoice, unless you request additional work mid-project. No surprises.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Do you do commercial properties?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-        <div class="faq-a">Yes — Ryan handles offices, retail spaces, strata and body corporate buildings. Commercial jobs are scheduled to minimise disruption to your business operations.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ FINAL CTA ═══ -->
-<section class="lp-section final-cta" id="quote">
-  <div class="container final-cta-layout">
-    <div class="final-left">
-      <span class="section-tag">Get Started Today</span>
-      <h2>Book Your Free <span class="hl">$297 Paint &amp; Prep Inspection</span></h2>
-      <p>Ryan comes to you, walks every surface, consults on colour, and hands you a written scope — completely free. No obligation to hire. No sales pressure. Just expert eyes on your home.</p>
-      <ul class="final-bullets">
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Full surface &amp; prep assessment — catch issues early</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Colour consultation in your actual lighting</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Detailed written scope &amp; fixed-price quote</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Zero obligation — hire us or don't, no pressure</li>
-      </ul>
-      <div class="final-contact">
-        <a href="tel:+16509215694">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          📞 (650) 921-5694
-        </a>
-        <a href="mailto:ryan@ryancourtneypainting.com">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          ryan@ryancourtneypainting.com
-        </a>
-      </div>
-    </div>
-    <div class="lp-form">
-      <h3>🎨 Claim My Free $297 Inspection</h3>
-      <form id="quoteForm">
-        <div class="form-group">
-          <label>Your Name</label>
-          <input type="text" name="name" placeholder="e.g. John Smith" required />
+    <div class="two-col">
+      <div class="content-col">
+        <div class="section-tag">Get Started</div>
+        <h2>Request Your Free Painting Inspection</h2>
+        <p>Tell us about your project and we'll be in touch within 24 hours to schedule your complimentary on-site assessment.</p>
+        <div class="expert-box" style="margin-top:32px">
+          <h3>Talk to Ryan Directly</h3>
+          <div class="expert-box__item">
+            <strong>Call Us</strong>
+            <a href="tel:6509215694">(650) 921-5694</a>
+          </div>
+          <div class="expert-box__item">
+            <strong>Email</strong>
+            <a href="mailto:ryan@ryancourtneypainting.com">ryan@rcp.com</a>
+          </div>
+          <div class="expert-box__item">
+            <strong>Location</strong>
+            <span>San Mateo, CA</span>
+          </div>
         </div>
-        <div class="form-group">
-          <label>Phone Number</label>
-          <input type="tel" name="phone" placeholder="Best number to reach you" required />
-        </div>
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" name="email" placeholder="you@email.com" />
-        </div>
-        <div class="form-group">
-          <label>Type of Work</label>
-          <select name="work_type">
-            <option value="">Select a service...</option>
-            <option>Interior Painting</option>
-            <option>Exterior Painting</option>
-            <option>Interior + Exterior</option>
-            <option>Feature Wall / Decorating</option>
-            <option>Cabinet Refinishing</option>
-            <option>Fence / Deck Staining</option>
-            <option>Commercial Painting</option>
-            <option>Not sure — need advice</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Tell Ryan About Your Project</label>
-          <textarea name="message" placeholder="e.g. 3-bedroom house, full interior repaint, looking to start in 6 weeks..."></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-lg btn-full">Book My Free Inspection →</button>
-        <p class="form-note">🔒 No obligation. Ryan responds within 24 hours to schedule your inspection.</p>
-      </form>
+      </div>
+      <div>
+        <form name="quote-request" method="POST" action="/thank-you" data-netlify="true" class="contact-form-card">
+          <input type="hidden" name="form-name" value="quote-request">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="q-name">Full Name</label>
+              <input type="text" id="q-name" name="name" class="form-control" placeholder="John Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="q-phone">Phone</label>
+              <input type="tel" id="q-phone" name="phone" class="form-control" placeholder="(555) 123-4567" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="q-email">Email</label>
+            <input type="email" id="q-email" name="email" class="form-control" placeholder="john@example.com">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="q-service">Service Needed</label>
+              <select id="q-service" name="service" class="form-control">
+                <option value="">Select...</option>
+                <option value="Interior Painting">Interior Painting</option>
+                <option value="Exterior Painting">Exterior Painting</option>
+                <option value="Cabinet Refinishing">Cabinet Refinishing</option>
+                <option value="Commercial Painting">Commercial Painting</option>
+                <option value="Deck & Fence Staining">Deck &amp; Fence Staining</option>
+                <option value="Drywall Repair">Drywall Repair</option>
+                <option value="Pressure Washing">Pressure Washing</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="q-timeline">Timeline</label>
+              <select id="q-timeline" name="timeline" class="form-control">
+                <option value="">Select...</option>
+                <option value="ASAP">ASAP</option>
+                <option value="Within 2 Weeks">Within 2 Weeks</option>
+                <option value="Within 30 Days">Within 30 Days</option>
+                <option value="Within 90 Days">Within 90 Days</option>
+                <option value="Just Exploring">Just Exploring</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="q-message">Tell Us About Your Project</label>
+            <textarea id="q-message" name="message" class="form-control" placeholder="Describe rooms, surfaces, colors you're considering..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center">Send My Request</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ FOOTER ═══ -->
+<!-- Footer -->
 <footer class="footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <a href="#" class="logo">Ryan Courtney <em>&nbsp;Painting</em></a>
-      <p>Premium residential &amp; commercial painting and decorating. Quality workmanship and results that last.</p>
-      <a href="tel:+16509215694" class="footer-phone">📞 (650) 921-5694</a>
-      <address class="footer-address">San Mateo, CA 94402 — Serving the Bay Area</address>
-      <p style="font-size:.78rem;color:rgba(255,255,255,.35);margin-top:4px;">Mon–Fri 7AM–7PM &nbsp;|&nbsp; Sat 8AM–5PM</p>
-      <span style="font-size:.75rem;color:rgba(255,255,255,.25);">Fully Licensed &amp; Insured</span>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer__logo">R. Courtney <span>Painting</span></div>
+        <p>Precision craftsmanship for residential and commercial properties throughout San Mateo and the greater Bay Area.</p>
+        <p style="font-size:0.85rem;color:var(--color-muted)"><strong style="color:#fff">Hours:</strong> Mon&ndash;Fri 7am&ndash;7pm &bull; Sat 8am&ndash;5pm &bull; Sun Closed</p>
+        <div style="margin-top:16px">
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <a href="tel:6509215694">(650) 921-5694</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+            <span>34 Creekridge Ct, San Mateo, CA 94402</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:ryan@ryancourtneypainting.com">ryan@ryancourtneypainting.com</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <div class="footer-links">
+          <a href="services.html">Interior Painting</a>
+          <a href="services.html">Exterior Painting</a>
+          <a href="services.html">Cabinet Refinishing</a>
+          <a href="services.html">Commercial Painting</a>
+          <a href="services.html">Deck &amp; Fence Staining</a>
+        </div>
+      </div>
     </div>
-    <div class="footer-col">
-      <h4>Services</h4>
-      <ul>
-        <li><a href="#services">Interior Painting</a></li>
-        <li><a href="#services">Exterior Painting</a></li>
-        <li><a href="#services">Feature Walls</a></li>
-        <li><a href="#services">Cabinet Refinishing</a></li>
-        <li><a href="#services">Commercial</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="#about">About Ryan</a></li>
-        <li><a href="#work">Our Work</a></li>
-        <li><a href="#testimonials">Reviews</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Get in Touch</h4>
-      <ul>
-        <li><a href="#quote">Free Quote</a></li>
-        <li><a href="tel:+16509215694">Call Ryan</a></li>
-        <li><a href="mailto:ryan@ryancourtneypainting.com">Email Us</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container">
-      <p>© <span id="yr"></span> Ryan Courtney Painting &amp; Decorating. All rights reserved. Built by <a href="https://truexpanse.com" style="color:rgba(255,255,255,.35);">TrueXpanse</a>.</p>
+    <div class="footer-bottom">
+      <span>&copy; 2026 R. Courtney Painting. All rights reserved.</span>
+      <span class="footer-license">Fully Licensed, Bonded &amp; Insured</span>
+      <span>Designed by <a href="https://truexpanse.com" target="_blank" rel="noopener">TrueXpanse</a></span>
     </div>
   </div>
 </footer>
 
-<script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
-
-  // Mobile menu
-  const toggle = document.getElementById('menuToggle');
-  const menu = document.getElementById('mobileMenu');
-  if (toggle && menu) {
-    toggle.addEventListener('click', () => menu.classList.toggle('open'));
-    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
-  }
-
-  // FAQ accordion
-  document.querySelectorAll('.faq-q').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.closest('.faq-item');
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!isOpen) item.classList.add('open');
-    });
-  });
-
-  // Form submit — both hero and bottom form
-  ['heroForm','quoteForm'].forEach(id => {
-    const form = document.getElementById(id);
-    if (form) {
-      form.addEventListener('submit', e => {
-        e.preventDefault();
-        const btn = form.querySelector('button[type="submit"]');
-        btn.textContent = '✅ Booked! Ryan Will Be In Touch Within 24 Hours.';
-        btn.disabled = true;
-        btn.style.background = '#16A34A';
-      });
-    }
-  });
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
