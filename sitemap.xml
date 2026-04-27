@@ -48,4 +48,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://ryancourtneypainting.com/blog-post/discover-the-power-of-color-in-modern-design</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ryancourtneypainting.com/blog-post/enhance-your-outdoor-space-with-a-beautifully-stained-wooden-gate</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
