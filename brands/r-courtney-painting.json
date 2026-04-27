@@ -1,0 +1,162 @@
+{
+  "name": "R. Courtney Painting",
+  "slug": "r-courtney-painting",
+  "domain": "ryancourtneypainting.com",
+  "phone": "(650) 921-5694",
+  "phoneTel": "+16509215694",
+  "email": "ryan@ryancourtneypainting.com",
+  "addressLine": "34 Creekridge Ct",
+  "city": "San Mateo",
+  "state": "CA",
+  "zip": "94402",
+  "license": "CSLB #918114",
+  "owner": "Ryan Courtney",
+  "since": "20+ years",
+  "facebook": "",
+  "youtube": "",
+  "yelp": "https://www.yelp.com/biz/r-courtney-painting-san-mateo",
+  "gtmId": "",
+  "_comment": "Replacements first scrub Webflow template, then apply Ryan's brand. Hero/stock images intentionally NOT swapped per Don.",
+  "replacements": [
+    ["Terra Paints&#x27;", "R. Courtney Painting&#x27;s"],
+    ["Terra Paints'", "R. Courtney Painting's"],
+    ["Terra Paints", "R. Courtney Painting"],
+    ["TERRA PAINTS", "R. COURTNEY PAINTING"],
+    ["terra paints", "R. Courtney Painting"],
+    ["Terra Paint", "R. Courtney Painting"],
+    ["TERRA PAINT", "R. COURTNEY PAINTING"],
+    ["terra paint", "R. Courtney Painting"],
+    ["TerraPaint", "RCourtneyPainting"],
+    ["terrapaint", "rcourtneypainting"],
+    ["info@terrapaintstore.com", "ryan@ryancourtneypainting.com"],
+    ["terrapaintstore.com", "ryancourtneypainting.com"],
+    ["info@rcourtneypaintingstore.com", "ryan@ryancourtneypainting.com"],
+    ["rick@rcourtneypaintingstore.com", "ryan@ryancourtneypainting.com"],
+    ["rcourtneypaintingstore.com", "ryancourtneypainting.com"],
+    ["admin@example.com", "ryan@ryancourtneypainting.com"],
+    ["info@example.com", "ryan@ryancourtneypainting.com"],
+    ["rick@example.com", "ryan@ryancourtneypainting.com"],
+    ["test@example.com", "ryan@ryancourtneypainting.com"],
+    ["?subject=admin%40example.com", "?subject=Website%20Inquiry"],
+    ["?subject=info%40", "?subject=Inquiry%20-%20"],
+    ["?subject=ryan%40ryancourtneypainting.com", "?subject=Website%20Inquiry"],
+
+    ["jlaw@lawspainting.com", "ryan@ryancourtneypainting.com"],
+    ["lawspainting.com", "ryancourtneypainting.com"],
+    ["lawscustompainting.webflow.io", "ryancourtneypainting.com"],
+    ["lawscustompainting", "rcourtneypainting"],
+    ["Law&#x27;s Custom Painting", "R. Courtney Painting"],
+    ["Law's Custom Painting", "R. Courtney Painting"],
+    ["Law&#x27;s", "R. Courtney"],
+    ["Law's", "R. Courtney"],
+    ["LAW'S CUSTOM PAINTING", "R. COURTNEY PAINTING"],
+    ["Laws Custom Painting", "R. Courtney Painting"],
+    ["LAWS CUSTOM PAINTING", "R. COURTNEY PAINTING"],
+    ["laws custom painting", "R. Courtney Painting"],
+    ["Laws Painting", "R. Courtney Painting"],
+    ["laws painting", "R. Courtney Painting"],
+    ["Laws&#x27;", "R. Courtney&#x27;s"],
+    ["Yuba City", "San Mateo"],
+    ["Since 1994", "Serving the Peninsula"],
+    ["since 1994", "for over 20 years"],
+    ["1994", "2005"],
+    ["30 years", "20+ years"],
+    ["30-year", "20-year"],
+    ["CA Contractor License #669214", "CSLB #918114"],
+    ["#669214", "#918114"],
+    ["John Law", "Ryan Courtney"],
+    ["jlaw", "ryan"],
+    ["1000 Lincoln Rd, Ste H154", "34 Creekridge Ct"],
+    ["95991", "94402"],
+    ["tel:(530)671-6763", "tel:+16509215694"],
+    ["tel:+15306716763", "tel:+16509215694"],
+    ["(530) 671-6763", "(650) 921-5694"],
+    ["(530)671-6763", "(650) 921-5694"],
+    ["5306716763", "6509215694"],
+    ["GTM-5CF85BDG", ""],
+
+    ["Logitex - Service Details", "Service Details | R. Courtney Painting"],
+    ["Logitex", "R. Courtney Painting"],
+    ["LOGITEX", "R. COURTNEY PAINTING"],
+    ["logitex", "R. Courtney Painting"],
+
+    ["tel:(888)1234567", "tel:+16509215694"],
+    ["(888) 123-4567", "(650) 921-5694"],
+    ["(888)1234567", "(650) 921-5694"],
+    ["+1 888-123-4567", "+1 (650) 921-5694"],
+    ["tel:805-466-2226", "tel:+16509215694"],
+    ["805-466-2226", "(650) 921-5694"],
+    ["tel:8054662226", "tel:+16509215694"],
+    ["(805) 466-2226", "(650) 921-5694"],
+    ["+18054662226", "+16509215694"],
+
+    ["Benjamin Moore Franchise", "Painting Contractor"],
+    ["Benjamin Moore Store", "Painting Contractor"],
+    ["Benjamin Moore Solutions for Every Project", "Painting Solutions for Every Project"],
+    ["Local Benjamin Moore Store", "Local Painting Contractor"],
+    ["Benjamin Moore Franchise Store", "Painting Contractor"],
+    ["Trusted Benjamin Moore Franchise", "Trusted Painting Contractor"],
+    ["your premier Benjamin Moore", "your trusted painting contractor"],
+    ["Benjamin Moore retail", "professional painting"],
+    ["Benjamin Moore products", "premium paint products"],
+    ["local Benjamin Moore store", "local trusted painter"],
+    ["trusted Benjamin Moore franchise", "trusted San Mateo painting team"],
+    ["Benjamin Moore franchise", "painting team"],
+    ["Benjamin Moore store", "painting team"],
+    ["Benjamin Moore primers", "premium primers"],
+    ["Benjamin Moore&#x27;s extensive color palette", "an extensive professional color palette"],
+    ["Benjamin Moore&#x27;s color matching technology, called ColorRead", "professional color-matching technology, called ColorRead"],
+    ["heard about Benjamin Moore&#x27;s color matching technology", "heard about advanced color matching technology"],
+    ["Benjamin Moore&#x27;s advanced color matching technology", "advanced color matching technology"],
+    ["Benjamin Moore", "premium paint"],
+
+    ["Your Premier Benjamin Moore Paint Store", "San Mateo's Trusted Painting Contractor for 20+ Years"],
+    ["premier destination for Benjamin Moore paints and supplies", "premier choice for residential and commercial painting in San Mateo and the Peninsula"],
+
+    ["Whether you're a seasoned pro or a DIY enthusiast, R. Courtney Painting has everything you need to paint", "Whether your home needs a fresh coat or your business needs a full repaint, R. Courtney Painting handles every project"],
+
+    ["Renew your cabinets with R. Courtney Painting&#x27; premium paint paints", "Renew your cabinets with R. Courtney Painting — heirloom-quality finishes for the Peninsula's finest homes"],
+    ["Renew your cabinets with R. Courtney Painting' premium paint paints", "Renew your cabinets with R. Courtney Painting — heirloom-quality finishes for the Peninsula's finest homes"],
+
+    ["premium paint paint store", "professional painting contractor"],
+    ["premium paint paint", "professional painting"],
+
+    ["images/695b7e3b004b2d2b3de6a00b_logo_white.png 604w", "images/logo-white.svg 604w"],
+    ["images/695b7e3b004b2d2b3de6a00b_logo_white-p-500.png 500w, ", ""],
+    ["695b7e3b004b2d2b3de6a00b_logo_white.png", "logo-white.svg"]
+  ],
+  "metaByPage": {
+    "index.html": {
+      "title": "R. Courtney Painting | San Mateo Painters Since 2005",
+      "description": "San Mateo's trusted painting contractor for 20+ years. Interior, exterior, cabinet, and commercial painting on the Peninsula. Free estimates. CSLB #918114."
+    },
+    "about.html": {
+      "title": "About | R. Courtney Painting — 20+ Years on the Peninsula",
+      "description": "Ryan Courtney has painted Peninsula homes for over 20 years. Family-run, licensed CSLB #918114. Heirloom-quality work, done right the first time."
+    },
+    "blog.html": {
+      "title": "Painting Tips & News | R. Courtney Painting",
+      "description": "Painting advice, color guidance, and project updates from R. Courtney Painting in San Mateo, CA."
+    },
+    "contact.html": {
+      "title": "Contact Us | R. Courtney Painting San Mateo",
+      "description": "Call (650) 921-5694 or request a free estimate. R. Courtney Painting serves San Mateo, Hillsborough, Atherton, and the Peninsula."
+    },
+    "service.html": {
+      "title": "Painting Services | R. Courtney Painting San Mateo",
+      "description": "Interior, exterior, cabinets, fence & deck staining, drywall, pressure washing. Licensed and insured. Serving the Peninsula since 2005."
+    },
+    "services/cabinets.html": {
+      "title": "Cabinet Refinishing | R. Courtney Painting San Mateo",
+      "description": "Refinish your kitchen cabinets without replacing them. Professional cabinet painting on the Peninsula by R. Courtney Painting."
+    },
+    "services/doors-and-shelves.html": {
+      "title": "Door & Shelf Painting | R. Courtney Painting San Mateo",
+      "description": "Crisp, durable finishes on doors, trim, and built-in shelving. The Peninsula's trusted painter for over 20 years."
+    },
+    "services/interior-walls.html": {
+      "title": "Interior Wall Painting | R. Courtney Painting San Mateo",
+      "description": "Transform any room with professional interior painting. Color consultation, prep, and a flawless finish — every time."
+    }
+  }
+}
