@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 604 208" preserveAspectRatio="xMidYMid meet">
-  <text x="302" y="92" text-anchor="middle"
+  <text x="302" y="80" text-anchor="middle"
         font-family="Georgia, 'Times New Roman', serif"
-        font-style="italic" font-size="68" font-weight="700"
-        fill="#ffffff" letter-spacing="-1">R. Courtney</text>
-  <text x="302" y="170" text-anchor="middle"
+        font-style="italic" font-size="46" font-weight="700"
+        fill="#ffffff" letter-spacing="-0.5">R. Courtney</text>
+  <text x="302" y="138" text-anchor="middle"
         font-family="Georgia, 'Times New Roman', serif"
-        font-size="56" font-weight="500"
-        fill="#ffffff" letter-spacing="14">PAINTING</text>
+        font-size="36" font-weight="500"
+        fill="#ffffff" letter-spacing="10">PAINTING</text>
+  <line x1="170" y1="156" x2="434" y2="156" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+  <text x="302" y="178" text-anchor="middle"
+        font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-size="14" font-weight="500"
+        fill="#ffffff" letter-spacing="3" opacity="0.85">SAN MATEO · 20+ YEARS</text>
 </svg>
