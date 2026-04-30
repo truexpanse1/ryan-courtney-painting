@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const REPO_ROOT = path.resolve(__dirname, '..');
-const SITE_URL = 'https://ryancourtneypainting.com';
+const SITE_URL = 'https://rpcourtneypainting.com';
 
 const brand = JSON.parse(
   await fs.readFile(path.join(REPO_ROOT, 'brands/r-courtney-painting.json'), 'utf8')
@@ -47,7 +47,7 @@ function altFromFilename(filename, pageContext) {
   if (fn.includes('inquiry')) return "Contact R. Courtney Painting";
   if (fn.includes('phone') || fn.includes('phone_in_talk') || fn.includes('inquiry%20line')) return "Call R. Courtney Painting at (650) 921-5694";
   if (fn.includes('lopcation') || fn.includes('location')) return "R. Courtney Painting service area: San Mateo and the Peninsula";
-  if (fn.includes('message') || fn.includes('email')) return "Email R. Courtney Painting at ryan@ryancourtneypainting.com";
+  if (fn.includes('message') || fn.includes('email')) return "Email R. Courtney Painting at rpcourtney@gmail.com";
   if (fn.includes('arrow')) return "";  // decorative — empty alt is correct
   if (fn.includes('check') || fn.includes('tick')) return "";  // decorative
   if (fn.includes('star')) return "";  // decorative

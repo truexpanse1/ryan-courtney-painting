@@ -40,5 +40,5 @@ Contact forms (3 across the site) all post to Netlify Forms with `name="contact"
 
 After deploy:
 1. Netlify dashboard → Site → Forms → contact
-2. Notifications → Email notification → ryan@ryancourtneypainting.com
+2. Notifications → Email notification → rpcourtney@gmail.com
 3. Optional: Outgoing webhook → GHL inbound webhook URL
